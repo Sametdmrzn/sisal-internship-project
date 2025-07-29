@@ -40,50 +40,12 @@
   }
 }
 
-
-@media (max-width: 767.98px) {
-  .Prod-with {
-    margin-bottom: 0;
-    margin-top: -20px;
-    margin-left: -15px;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+@media (max-width: 1024px) {
+  .mainwidth {
+    width: 980px;
   }
 }
-@media (max-width: 767.98px) {
-  .Prod-with {
-    padding-left: 20px;
-    padding-right: 0;
-  }
-}
-@media (max-width: 979.98px) {
-  .Prod-with {
-    margin-bottom: 0;
-    margin-top: -20px;
-    margin-left: -30px;
-    border-radius: 0;
-    
-  }
-}
-.play-width {
-  padding: 20px;
-  border-radius: 4px 4px 0 0;
-  margin-left: -20px;
-}
 
 
 
 
-@media (max-width: 767.98px) {
-  .lottery-type {
-
-    height: 34px;
-    width: 70px;
-    margin-right: 5px;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-  }
-}

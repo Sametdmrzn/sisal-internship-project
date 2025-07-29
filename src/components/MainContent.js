@@ -93,7 +93,7 @@ const buttonData = [
 
 function MainContent({ activeButton, setActiveButton, setBannerColor }) {
   return (
-    <div id="main-content" className="mt-[55px] w-[90%] mx-auto ">
+    <div id="main-content" className="  lg:w-[1024px]  mx-auto ">
       <div className="navigation-path flex mt-4">
         <ol className="flex gap-2">
           <li className="text-black">Milli Piyango</li>
@@ -102,7 +102,7 @@ function MainContent({ activeButton, setActiveButton, setBannerColor }) {
         </ol>
       </div>
 
-      <div className="w-full mt-9 flex overflow-x-auto scrollbar-hidden justify-start gap-4 whitespace-nowrap ">
+      <div className="flex overflow-x-auto scrollbar-hidden justify-start   mt-9  gap-4 whitespace-nowrap ">
         {buttonData.map(({ id, text, icon, default: def, active }) => {
           const isActive = activeButton === id;
           const { border, bg, textColor } = isActive ? active : def;
@@ -113,14 +113,17 @@ function MainContent({ activeButton, setActiveButton, setBannerColor }) {
             setBannerColor(active.bg); // aktif butonun bg rengi banner’a yansır
           };
 
+          
+          
+
           return (
             <span
               key={id}
               onClick={handleClick}
-              className={`${border} ${bg} ${textColor} rounded px-4 py-1 flex items-center justify-center gap-2  `}
+              className={`${border} ${bg} ${textColor} rounded px-2 py-2 flex items-center justify-center gap-2 min-w-[70px] h-10 `}
             >
               {currentIcon ? (
-                <img src={currentIcon} alt="button icon" className=" "/>
+                <img src={currentIcon} alt="button icon" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
               ) : (
                 text
               )}
@@ -129,6 +132,7 @@ function MainContent({ activeButton, setActiveButton, setBannerColor }) {
         })}
       </div>
     </div>
+    
   );
 }
 

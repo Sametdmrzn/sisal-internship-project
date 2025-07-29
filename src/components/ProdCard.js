@@ -2,7 +2,7 @@ import React from "react";
 
 function ProdCard({ bannerColor }) {
 return (
-  <div id="topside" className={`${bannerColor} text-white px-4 py-3 w-full max-w-[1200px] mt-3 mx-auto rounded-t`}>
+  <div id="topside" className={`${bannerColor} lg:w-[1024px] text-white px-4 py-3  mt-3 mx-auto rounded-t`}>
     <div className="flex items-center justify-between flex-wrap gap-4">
       
       <div className="flex-shrink-0">
@@ -20,7 +20,6 @@ return (
           <a href="#" className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Sonuclar</a>
         </li>
       </ul>
-
     </div>
   </div>
 );
