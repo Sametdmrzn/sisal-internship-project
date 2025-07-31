@@ -30,15 +30,7 @@
   height: 40px;
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
-  .Resaultwidth {
-    width: 246px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-  }
-}
+
 
 @media (max-width: 1024px) {
   .mainwidth {

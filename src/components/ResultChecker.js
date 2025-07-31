@@ -8,12 +8,14 @@ function ResultChecker() {
   const years = Array.from({ length: 101 }, (_, i) => 2000 + i);
 
 return (
-  <div className="px-4 sm:px-6 md:px-8 mx-auto max-w-[1024px] bg-white">
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
-
-      {/* 1. sıra - Ay ve Yıl */}
-      <div className="flex gap-4 mt-4">
-        <select className="border Resaultwidth border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black">
+  <div className="w-full">
+    <div className="flex flex-col sm:flex-row flex-nowrap justify-center items-center gap-4 mx-auto max-w-[1024px] bg-white p-4">
+      {/* Ay ve Yıl Select */}
+      <div className="flex gap-4">
+        <select
+          id="1"
+          className="border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black lg:w-[246px] lg:h-[40px] sm: "
+        >
           {months.map((month, index) => (
             <option key={index} value={index + 1}>
               {month}
@@ -21,7 +23,10 @@ return (
           ))}
         </select>
 
-        <select className="border Resaultwidth border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black">
+        <select
+          id="2"
+          className="border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black lg:w-[246px] lg:h-[40px] md:w-[140px] md:h-[40px]"
+        >
           {years.map((year) => (
             <option key={year} value={year}>
               {year}
@@ -30,23 +35,26 @@ return (
         </select>
       </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full">
-          <div className="w-full sm:w-auto">
-            <input
-              type="search"
-              placeholder="Draw"
-              className="w-full border border-gray-300 px-4 py-2 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black"
-            />
-          </div>
-          <button className="w-full sm:w-auto bg-[#0173b9] px-6 py-2 rounded-full text-white">
-            Filter
-          </button>
-        </div>
-        
+      {/* Arama ve Filtre */}
+      <div id="3" className="flex flex-col sm:flex-row gap-4 w-full ">
+        <input
+          type="search"
+          placeholder="Draw"
+          className="border border-gray-300 px-4 py-2 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black lg:w-[246px] lg:h-[40px] md:w-[140px] md:h-[40px]"
+        />
 
+        <button
+          id="4"
+          className="bg-[#0173b9] px-6 py-2 rounded-full text-white h-[40px] lg:w-[146px] lg:h-[40px] md:w-[140px] md:h-[40px]"
+        >
+          Filter
+        </button>
+      </div>
     </div>
   </div>
 );
+
+
 
 
 }
