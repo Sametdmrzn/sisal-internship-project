@@ -120,13 +120,13 @@ function MainContent({ activeButton, setActiveButton, setBannerColor }) {
             <span
               key={id}
               onClick={handleClick}
-              className={`${border} ${bg} ${textColor} rounded-[6px] px-2 py-2 flex items-center justify-center gap-[16px] min-w-[70px] lg:h-[40px] min-h-[34px] text-xs sm:h-[38px] lg:min-w-[120px] sm:w-[34px]`}
+              className={`${border} ${bg} ${textColor} rounded-[6px]  flex items-center justify-center gap-[16px] min-w-[70px] lg:h-[40px] min-h-[34px] text-xs sm:h-[38px] lg:min-w-[120px] sm:w-[34px]`}
             >
               {currentIcon ? (
                 <img
                   src={currentIcon}
                   alt="button icon"
-                  className=" w-[44.4px] h-[21.3px]" 
+                  className=" " 
                 />
               ) : (
                 text
