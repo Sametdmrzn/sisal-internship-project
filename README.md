@@ -9,7 +9,7 @@ Amaç, mevcut sayfanın kullanıcı deneyimini ve görsel yapısını koruyarak 
 
 ## Proje Linki
 
-[GitHub Deposu](https://github.com/Sametdmrzn/Figma-)
+[Figma-](https://github.com/Sametdmrzn/Figma-)
 
 
 
