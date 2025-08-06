@@ -11,7 +11,8 @@ const buttonData = [
     },
     active: {
       border: "border-[1px]",
-      bg: "bg-[#005c95]",
+      bg: "w-full bg-[#005C95] to-green-400 ",
+      bgbanner: "bg-black",
       textColor: "text-white"
     }
   },
@@ -25,8 +26,9 @@ const buttonData = [
     },
     active: {
       border: "border-[1px] border-[#23AAE2]",
-      bg: "bg-[#169ad6]",
-      textColor: "text-white"
+      bg: "bg-[#23AAE2]",
+      bgbanner: "bg-gradient-to-b from-[#0989D1] to-[#239FE0]",
+      textColor:"text-white"
     }
   },
   {
@@ -40,7 +42,8 @@ const buttonData = [
     active: {
       icon: "/assets/MainContent-Assets/Lottery Game Logo-Negative.svg",
       border: "border-[1px] border-[#EA0029]",
-      bg: "bg-red-800",
+      bg: "bg-[#EA0029]",
+      bgbanner: "bg-gradient-to-b from-[#DF0D1E] to-[#F03F4F]",
       textColor: "text-yellow-200"
     }
   },
@@ -56,6 +59,7 @@ const buttonData = [
       icon: "/assets/MainContent-Assets/superloto-Negative.svg",
       border: "border-[1px] border-[#cc442b]",
       bg: "bg-[#FF5100]",
+      bgbanner: " bg-gradient-to-b from-[#FF5102] to-[#FE793C] ",
       textColor: "text-[#cc442b]"
     }
   },
@@ -70,6 +74,7 @@ const buttonData = [
     active: {
       border: "border-[1px] border-[#1f3e5b]",
       bg: "bg-[#E50695]",
+      bgbanner: "bg-gradient-to-b from-[#ED1893] to-[#F64DB0]",
       textColor: "text-yellow-300"
     }
   },
@@ -84,6 +89,7 @@ const buttonData = [
     active: {
       border: "border-[1px] border-[#1f3e5b]",
       bg: "bg-[#A25EB5]",
+      bgbanner: "bg-gradient-to-b from-[#9139A8] to-[#A94DBA]",
       textColor: "text-yellow-300"
     }
   }
@@ -102,15 +108,15 @@ function MainContent({ activeButton, setActiveButton, setBannerColor }) {
         </ol>
       </div>
 
-      <div className="flex overflow-x-auto scrollbar-hidden justify-start   mt-9  gap-4 whitespace-nowrap ">
+      <div className="flex overflow-x-auto scrollbar-hidden justify-start  mt-9  gap-4 whitespace-nowrap ">
         {buttonData.map(({ id, text, icon, default: def, active }) => {
           const isActive = activeButton === id;
-          const { border, bg, textColor } = isActive ? active : def;
+          const { border, bg, bgbanner, textColor } = isActive ? active : def;
           const currentIcon = isActive && active.icon ? active.icon : icon;
 
           const handleClick = () => {
             setActiveButton(id);
-            setBannerColor(active.bg); // aktif butonun bg rengi banner’a yansır
+            setBannerColor(active.bgbanner); // aktif butonun bg rengi banner’a yansır
           };
 
           
@@ -126,7 +132,6 @@ function MainContent({ activeButton, setActiveButton, setBannerColor }) {
                 <img
                   src={currentIcon}
                   alt="button icon"
-                  className=" " 
                 />
               ) : (
                 text
