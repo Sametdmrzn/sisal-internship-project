@@ -10,7 +10,7 @@ function App() {
   const [activeButton, setActiveButton] = useState(1);
 
   // Banner arka planı Tailwind sınıfı olarak tutuluyor
-  const [bannerColor, setBannerColor] = useState('bg-gradient-to-b from-blue-600 to-green-400');
+  const [bannerColor, setBannerColor] = useState('bg-[#005C95]');
 
   // Dinamik logo için state ekleyelim (ProdCard bunu kullanıyor)
   const [logoSrc, setLogoSrc] = useState('/assets/default-logo.svg');
