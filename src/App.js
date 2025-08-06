@@ -6,19 +6,32 @@ import ProdCard from './components/ProdCard';
 import ResultChecker from './components/ResultChecker';
 
 function App() {
-  const [activeButton, setActiveButton] = useState(null);
-  const [bannerColor, setBannerColor] = useState('bg-red-500'); // varsayılan renk
+  // Başlangıçta 1. butonu aktif yapabilirsiniz (MainContent'teki buttonData id'leriyle uyumluysa)
+  const [activeButton, setActiveButton] = useState(1);
+
+  // Banner arka planı Tailwind sınıfı olarak tutuluyor
+  const [bannerColor, setBannerColor] = useState('bg-gradient-to-b from-blue-600 to-green-400');
+
+  // Dinamik logo için state ekleyelim (ProdCard bunu kullanıyor)
+  const [logoSrc, setLogoSrc] = useState('/assets/default-logo.svg');
 
   return (
     <div className="App">
       <Header />
       <Navbar />
+
       <MainContent
         activeButton={activeButton}
         setActiveButton={setActiveButton}
         setBannerColor={setBannerColor}
+        setLogoSrc={setLogoSrc}        // <-- EKLENDİ: tanımlı state setter gönderiliyor
       />
-      <ProdCard bannerColor={bannerColor} />
+
+      <ProdCard
+        bannerColor={bannerColor}
+        logoSrc={logoSrc}               // <-- EKLENDİ: ProdCard'ın beklediği prop gönderiliyor
+      />
+
       <ResultChecker />
     </div>
   );
