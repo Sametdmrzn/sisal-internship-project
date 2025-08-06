@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
       {/* Navbar */}
-      <nav className="flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-blue-600 text-white relative">
+      <nav className="flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white relative">
         {/* Desktop Menü */}
         <ul className="hidden md:flex gap-4">
           <li className="relative group">
