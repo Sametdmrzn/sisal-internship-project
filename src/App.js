@@ -24,12 +24,12 @@ function App() {
         activeButton={activeButton}
         setActiveButton={setActiveButton}
         setBannerColor={setBannerColor}
-        setLogoSrc={setLogoSrc}        // <-- EKLENDİ: tanımlı state setter gönderiliyor
+        setLogoSrc={setLogoSrc}        // tanımlı state setter gönderiliyor
       />
 
       <ProdCard
         bannerColor={bannerColor}
-        logoSrc={logoSrc}               // <-- EKLENDİ: ProdCard'ın beklediği prop gönderiliyor
+        logoSrc={logoSrc}               //  ProdCard'ın beklediği prop gönderiliyor
       />
 
       <ResultChecker />

@@ -4,30 +4,30 @@ function Header() {
   return (
     <>
       {/* Navbar */}
-      <nav className="flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white relative">
+      <nav className="relative flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white ">
         {/* Desktop Menü */}
-        <ul className="hidden md:flex gap-4">
+        <ul className="hidden md:flex gap-4 ">
           <li className="relative group">
-            <a href="#">Sayısal Oyunlar</a>
+            <a href="#" className="">Sayısal Oyunlar</a>
             {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block bg-white text-black  p-2 rounded shadow-lg z-50">
+            <ul className="absolute hidden group-hover:block left-0 top-full bg-[#169AD6]  text-black  rounded shadow-lg z-50">
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Sayısal Loto
                 </a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Süper Loto
                 </a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Şans Topu
                 </a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
                   On Numara
                 </a>
               </li>
@@ -68,13 +68,13 @@ function Header() {
         </ul>
 
         <ul className="hidden md:flex gap-4">
-          <li><img src="/assets/MainContent-Assets/Union (2).svg"></img></li>
+          <li><img className="w-6 h-6" src="/assets/MainContent-Assets/Union (2).svg"></img></li>
           <li><a>Kampanyalar</a></li>
-          <li><img src="/assets/MainContent-Assets/Calendar.svg"></img></li>
+          <li><img className="w-6 h-6" src="/assets/MainContent-Assets/Calendar.svg"></img></li>
           <li className="border-r"></li>
-          <li><img src="/assets/MainContent-Assets/Tv.svg"></img></li>
+          <li><img className="w-6 h-6" src="/assets/MainContent-Assets/Tv.svg"></img></li>
           <li className="border-r"></li>
-          <li><img src="/assets/MainContent-Assets/Calendar.svg"></img></li>
+          <li><img className="w-6 h-6" src="/assets/MainContent-Assets/Calendar.svg"></img></li>
 
         </ul>
 
