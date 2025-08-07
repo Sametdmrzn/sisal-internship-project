@@ -6,11 +6,11 @@ function Header() {
       {/* Navbar */}
       <nav className="relative flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white h-[60px]  ">
         {/* Desktop Menü */}
-        <ul className="hidden md:flex gap-4 items-center">
+        <ul className="hidden md:flex gap-4 items-center cursor-pointer">
           <li className="relative group items-center">
-            <a>Sayısal Oyunlar</a>
+            <a className="flex items-center ">Sayısal Oyunlar</a>
             {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block left-0 top-[40px] bg-[#169AD6]  text-black  rounded shadow-lg z-50">
+            <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px] text-white  rounded shadow-lg z-50">
               <li>
                 <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Sayısal Loto
@@ -34,32 +34,33 @@ function Header() {
             </ul>
           </li>
           <li>
-            <a href="#">Kazı Kazan</a>
+            <a>Kazı Kazan</a>
           </li>
           <li>
-            <a href="#">Sanal Oyunlar</a>
+            <a>Sanal Oyunlar</a>
           </li>
           <li>
-            <a href="#">Milli Piyango</a>
+            <a>Milli Piyango</a>
           </li>
           <li>
-            <a href="#" >Hızlı On</a>
+            <a >Hızlı On</a>
           </li>
-          <li className="border-r"></li>
+          <li className="border-r ">
+          </li>
           <li>
-            <a href="#"></a>
+            <a></a>
           </li>
           <li className="relative group">
-            <a href="#">Sonuçlar</a>
+            <a className=" flex items-center" >Sonuçlar</a>
             {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block left-0 top-[40px] bg-[#169AD6]  text-black  rounded shadow-lg z-50">
+            <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px]  text-white  rounded shadow-lg z-50">
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Çekilişler
                 </a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Çekiliş Videoları
                 </a>
               </li>
