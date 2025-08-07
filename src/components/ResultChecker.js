@@ -14,7 +14,7 @@ return (
       <div className="flex gap-4">
         <select
           id="1"
-          className="border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black lg:w-[246px] lg:h-[40px] sm: "
+          className="border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black h-[40px] w-[185px] lg:w-[246px] lg:h-[40px]   "
         >
           {months.map((month, index) => (
             <option key={index} value={index + 1}>
@@ -25,7 +25,7 @@ return (
 
         <select
           id="2"
-          className="border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black lg:w-[246px] lg:h-[40px] md:w-[140px] md:h-[40px]"
+          className="border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-1 focus:ring-black h-[40px] w-[185px] lg:w-[246px] lg:h-[40px] md:w-[140px] md:h-[40px]"
         >
           {years.map((year) => (
             <option key={year} value={year}>

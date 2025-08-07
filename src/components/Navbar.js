@@ -4,13 +4,13 @@ function Header() {
   return (
     <>
       {/* Navbar */}
-      <nav className="relative flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white ">
+      <nav className="relative flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white h-[60px]  ">
         {/* Desktop Menü */}
-        <ul className="hidden md:flex gap-4 ">
-          <li className="relative group">
-            <a href="#" className="">Sayısal Oyunlar</a>
+        <ul className="hidden md:flex gap-4 items-center">
+          <li className="relative group items-center">
+            <a>Sayısal Oyunlar</a>
             {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block left-0 top-full bg-[#169AD6]  text-black  rounded shadow-lg z-50">
+            <ul className="absolute hidden group-hover:block left-0 top-[40px] bg-[#169AD6]  text-black  rounded shadow-lg z-50">
               <li>
                 <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Sayısal Loto
@@ -52,7 +52,7 @@ function Header() {
           <li className="relative group">
             <a href="#">Sonuçlar</a>
             {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block bg-white text-black mt-2 p-2 rounded shadow-lg z-50">
+            <ul className="absolute hidden group-hover:block left-0 top-[40px] bg-[#169AD6]  text-black  rounded shadow-lg z-50">
               <li>
                 <a href="#" className="block px-4 py-2 hover:bg-gray-200">
                   Çekilişler
