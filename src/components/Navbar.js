@@ -10,7 +10,7 @@ function Header() {
           <li className="relative group items-center">
             <a>Sayısal Oyunlar</a>
             {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block left-0 top-[40px] bg-[#169AD6]  text-black  rounded shadow-lg z-50">
+            <ul className="absolute hidden group-hover:block left-0 top-[40px] bg-[#169AD6] w-[200px] p-2  text-white  rounded shadow-lg z-50">
               <li>
                 <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Sayısal Loto
@@ -52,7 +52,7 @@ function Header() {
           <li className="relative group">
             <a href="#">Sonuçlar</a>
             {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block left-0 top-[40px] bg-[#169AD6]  text-black  rounded shadow-lg z-50">
+            <ul className="absolute hidden group-hover:block left-0 top-[40px] w-[200px] p-2 bg-[#169AD6]  text-white  rounded shadow-lg z-50">
               <li>
                 <a href="#" className="block px-4 py-2 hover:bg-gray-200">
                   Çekilişler
