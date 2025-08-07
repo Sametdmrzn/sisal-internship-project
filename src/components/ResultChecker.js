@@ -35,7 +35,7 @@ return (
         </select>
       </div>
 
-      {/* Arama ve Filtre */}
+      Arama ve Filtre
       <div id="3" className="flex flex-col sm:flex-row gap-4 w-full ">
         <input
           type="search"

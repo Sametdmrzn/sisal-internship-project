@@ -26,13 +26,12 @@ function App() {
         setBannerColor={setBannerColor}
         setLogoSrc={setLogoSrc}        // tanımlı state setter gönderiliyor
       />
-
       <ProdCard
         bannerColor={bannerColor}
         logoSrc={logoSrc}               //  ProdCard'ın beklediği prop gönderiliyor
       />
 
-      <ResultChecker />
+
     </div>
   );
 }
