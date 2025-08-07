@@ -5,7 +5,6 @@
 Bu proje, yayında olan Milli Piyango sitesinin sonuçlar sayfasına çok benzer bir yapıyı yeniden oluşturmayı amaçlamaktadır.  
 Amaç, mevcut sayfanın kullanıcı deneyimini ve görsel yapısını koruyarak tekrar tasarlanmasıdır.
 
----
 
 ## Proje Linki
 
