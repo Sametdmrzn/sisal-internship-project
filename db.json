@@ -1,160 +1,275 @@
-[
-  {
-    "next": {
-      "drawDetail": {
-        "drawId": { "game": 101, "number": 95, "year": 2025 },
-        "drawDate": "2025-08-09T18:30:00Z",
-        "status": 1,
-        "winningNumbers": null,
-        "prizes": null,
-        "promotions": null,
-        "attributes": [
-          { "name": "static.game.acronym", "value": "SAYISALLOTO" }
-        ]
+{
+  "draws": [
+    {
+      "next": {
+        "drawDetail": {
+          "drawId": {
+            "game": 101,
+            "number": 95,
+            "year": 2025
+          },
+          "drawDate": "2025-08-09T18:30:00Z",
+          "status": 1,
+          "winningNumbers": null,
+          "prizes": null,
+          "promotions": null,
+          "attributes": [
+            {
+              "name": "static.game.acronym",
+              "value": "SAYISALLOTO"
+            }
+          ]
+        },
+        "error": null
       },
-      "error": null
-    },
-    "last": {
-      "drawDetail": {
-        "drawId": { "game": 101, "number": 94, "year": 2025 },
-        "drawDate": "2025-08-06T18:30:00Z",
-        "status": 3,
-        "winningNumbers": [
-          { "id": 1, "name": "ordinary", "numbers": [22, 36, 43, 46, 80, 88] }
-        ],
-        "prizes": [
-          {
-            "typeCode": "6",
-            "typeDescription": "First Category",
-            "amount": 0,
-            "prize": 0,
-            "payout": 50509187871
-          }
-        ],
-        "attributes": [
-          { "name": "static.game.acronym", "value": "SAYISALLOTO" },
-          { "name": "jackpot", "value": "50509187871" }
-        ]
+      "last": {
+        "drawDetail": {
+          "drawId": {
+            "game": 101,
+            "number": 94,
+            "year": 2025
+          },
+          "drawDate": "2025-08-06T18:30:00Z",
+          "status": 3,
+          "winningNumbers": [
+            {
+              "id": 1,
+              "name": "ordinary",
+              "numbers": [22, 36, 43, 46, 80, 88]
+            },
+            {
+              "id": 2,
+              "name": "joker",
+              "numbers": [21]
+            },
+            {
+              "id": 3,
+              "name": "superstar",
+              "numbers": [21]
+            }
+          ],
+          "prizes": [
+            {
+              "typeCode": "6",
+              "typeDescription": "First Category (6 point)",
+              "amount": 0,
+              "prize": 0,
+              "payout": 50509187871
+            }
+          ],
+          "promotions": null,
+          "attributes": [
+            {
+              "name": "static.game.acronym",
+              "value": "SAYISALLOTO"
+            },
+            {
+              "name": "jackpot",
+              "value": "50509187871"
+            }
+          ]
+        },
+        "error": null
       },
-      "error": null
+      "game": 101
     },
-    "game": 101
-  },
-  {
-    "next": {
-      "drawDetail": {
-        "drawId": { "game": 102, "number": 94, "year": 2025 },
-        "drawDate": "2025-08-07T18:30:00Z",
-        "status": 1,
-        "winningNumbers": null,
-        "prizes": null,
-        "promotions": null,
-        "attributes": [{ "name": "static.game.acronym", "value": "SUPERLOTO" }]
+    {
+      "next": {
+        "drawDetail": {
+          "drawId": {
+            "game": 102,
+            "number": 94,
+            "year": 2025
+          },
+          "drawDate": "2025-08-07T18:30:00Z",
+          "status": 1,
+          "winningNumbers": null,
+          "prizes": null,
+          "promotions": null,
+          "attributes": [
+            {
+              "name": "static.game.acronym",
+              "value": "SUPERLOTO"
+            }
+          ]
+        },
+        "error": null
       },
-      "error": null
-    },
-    "last": {
-      "drawDetail": {
-        "drawId": { "game": 102, "number": 93, "year": 2025 },
-        "drawDate": "2025-08-05T18:30:00Z",
-        "status": 3,
-        "winningNumbers": [
-          { "id": 1, "name": "ordinary", "numbers": [34, 46, 15, 40, 25, 47] }
-        ],
-        "prizes": [
-          {
-            "typeCode": "6",
-            "typeDescription": "First Category",
-            "amount": 0,
-            "prize": 0,
-            "payout": 2960337311
-          }
-        ],
-        "attributes": [
-          { "name": "static.game.acronym", "value": "SUPERLOTO" },
-          { "name": "jackpot", "value": "2960337311" }
-        ]
+      "last": {
+        "drawDetail": {
+          "drawId": {
+            "game": 102,
+            "number": 93,
+            "year": 2025
+          },
+          "drawDate": "2025-08-05T18:30:00Z",
+          "status": 3,
+          "winningNumbers": [
+            {
+              "id": 1,
+              "name": "ordinary",
+              "numbers": [34, 46, 15, 40, 25, 47]
+            }
+          ],
+          "prizes": [
+            {
+              "typeCode": "6",
+              "typeDescription": "First Category (6 point)",
+              "amount": 0,
+              "prize": 0,
+              "payout": 2960337311
+            }
+          ],
+          "promotions": null,
+          "attributes": [
+            {
+              "name": "static.game.acronym",
+              "value": "SUPERLOTO"
+            },
+            {
+              "name": "jackpot",
+              "value": "2960337311"
+            }
+          ]
+        },
+        "error": null
       },
-      "error": null
+      "game": 102
     },
-    "game": 102
-  },
-  {
-    "next": {
-      "drawDetail": {
-        "drawId": { "game": 103, "number": 63, "year": 2025 },
-        "drawDate": "2025-08-08T17:00:00Z",
-        "status": 1,
-        "winningNumbers": null,
-        "prizes": null,
-        "promotions": null,
-        "attributes": [{ "name": "static.game.acronym", "value": "ONNUMARA" }]
+    {
+      "next": {
+        "drawDetail": {
+          "drawId": {
+            "game": 103,
+            "number": 63,
+            "year": 2025
+          },
+          "drawDate": "2025-08-08T17:00:00Z",
+          "status": 1,
+          "winningNumbers": null,
+          "prizes": null,
+          "promotions": null,
+          "attributes": [
+            {
+              "name": "static.game.acronym",
+              "value": "ONNUMARA"
+            }
+          ]
+        },
+        "error": null
       },
-      "error": null
-    },
-    "last": {
-      "drawDetail": {
-        "drawId": { "game": 103, "number": 62, "year": 2025 },
-        "drawDate": "2025-08-04T17:00:00Z",
-        "status": 3,
-        "winningNumbers": [
-          { "id": 1, "name": "ordinary", "numbers": [4, 11, 12, 15, 17, 19] }
-        ],
-        "prizes": [
-          {
-            "typeCode": "10",
-            "typeDescription": "win10",
-            "amount": 0,
-            "prize": 0,
-            "payout": 180195930
-          }
-        ],
-        "attributes": [
-          { "name": "static.game.acronym", "value": "ONNUMARA" },
-          { "name": "jackpot", "value": "180195930" }
-        ]
+      "last": {
+        "drawDetail": {
+          "drawId": {
+            "game": 103,
+            "number": 62,
+            "year": 2025
+          },
+          "drawDate": "2025-08-04T17:00:00Z",
+          "status": 3,
+          "winningNumbers": [
+            {
+              "id": 1,
+              "name": "ordinary",
+              "numbers": [4, 11, 12, 15, 17, 19, 25, 29, 32, 37, 39, 40, 43, 47, 48, 50, 57, 59, 61, 67, 69, 78]
+            }
+          ],
+          "prizes": [
+            {
+              "typeCode": "10",
+              "typeDescription": "win10",
+              "amount": 0,
+              "prize": 0,
+              "payout": 180195930
+            }
+          ],
+          "promotions": null,
+          "attributes": [
+            {
+              "name": "static.game.acronym",
+              "value": "ONNUMARA"
+            },
+            {
+              "name": "jackpot",
+              "value": "180195930"
+            }
+          ]
+        },
+        "error": null
       },
-      "error": null
+      "game": 103
     },
-    "game": 103
-  },
-  {
-    "next": {
-      "drawDetail": {
-        "drawId": { "game": 40, "number": 64, "year": 2025 },
-        "drawDate": "2025-08-10T17:00:00Z",
-        "status": 1,
-        "winningNumbers": null,
-        "prizes": null,
-        "promotions": null,
-        "attributes": [{ "name": "static.game.acronym", "value": "SANSTOPU" }]
+    {
+      "next": {
+        "drawDetail": {
+          "drawId": {
+            "game": 40,
+            "number": 64,
+            "year": 2025
+          },
+          "drawDate": "2025-08-10T17:00:00Z",
+          "status": 1,
+          "winningNumbers": null,
+          "prizes": null,
+          "promotions": null,
+          "attributes": [
+            {
+              "name": "static.game.acronym",
+              "value": "SANSTOPU"
+            }
+          ]
+        },
+        "error": null
       },
-      "error": null
-    },
-    "last": {
-      "drawDetail": {
-        "drawId": { "game": 40, "number": 63, "year": 2025 },
-        "drawDate": "2025-08-06T17:00:00Z",
-        "status": 3,
-        "winningNumbers": [
-          { "id": 1, "name": "ordinary", "numbers": [22, 24, 17, 15, 29] }
-        ],
-        "prizes": [
-          {
-            "typeCode": "5p1",
-            "typeDescription": "Birinci kategori",
-            "amount": 2,
-            "prize": 102155815,
-            "payout": 204311634
-          }
-        ],
-        "attributes": [
-          { "name": "jackpot", "value": "113616230" },
-          { "name": "static.game.acronym", "value": "SANSTOPU" }
-        ]
+      "last": {
+        "drawDetail": {
+          "drawId": {
+            "game": 40,
+            "number": 63,
+            "year": 2025
+          },
+          "drawDate": "2025-08-06T17:00:00Z",
+          "status": 3,
+          "winningNumbers": [
+            {
+              "id": 1,
+              "name": "ordinary",
+              "numbers": [22, 24, 17, 15, 29]
+            },
+            {
+              "id": 2,
+              "name": "special",
+              "numbers": [10]
+            }
+          ],
+          "prizes": [
+            {
+              "typeCode": "5p1",
+              "typeDescription": "Birinci kategori (5+1 puan)",
+              "amount": 2,
+              "prize": 102155815,
+              "payout": 204311634
+            }
+          ],
+          "promotions": null,
+          "attributes": [
+            {
+              "name": "jackpot",
+              "value": "113616230"
+            },
+            {
+              "name": "total-pool-prize",
+              "value": "627729200"
+            },
+            {
+              "name": "static.game.acronym",
+              "value": "SANSTOPU"
+            }
+          ]
+        },
+        "error": null
       },
-      "error": null
-    },
-    "game": 40
-  }
-]
+      "game": 40
+    }
+  ]
+}
