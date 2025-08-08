@@ -103,7 +103,7 @@ function MainContent({ activeButton, setActiveButton, setBannerColor, setLogoSrc
         <ol className="flex gap-2">
           <li className="text-black">Milli Piyango</li>
           <li>{">"}</li>
-          <li className="text-blue-500">Sayısal Loto Sonuçlar</li>
+          <li className="text-blue-500">Çekiliş Sonuçları</li>
         </ol>
       </div>
 

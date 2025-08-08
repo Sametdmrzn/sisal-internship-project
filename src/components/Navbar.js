@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Navbar() {
   return (
     <>
       {/* Navbar */}
@@ -8,7 +8,7 @@ function Header() {
         {/* Desktop Menü */}
         <ul className="hidden md:flex gap-4 items-center cursor-pointer">
           <li className="relative group items-center">
-            <a className="flex items-center ">Sayısal Oyunlar</a>
+            <a className="flex h-[60px] items-center ">Sayısal Oyunlar</a>
             {/* Dropdown */}
             <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px] text-white  rounded shadow-lg z-50">
               <li>
@@ -51,7 +51,7 @@ function Header() {
             <a></a>
           </li>
           <li className="relative group">
-            <a className=" flex items-center" >Sonuçlar</a>
+            <a className=" flex items-center h-[60px]" >Sonuçlar</a>
             {/* Dropdown */}
             <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px]  text-white  rounded shadow-lg z-50">
               <li>
@@ -102,4 +102,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;
