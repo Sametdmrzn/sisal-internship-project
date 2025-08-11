@@ -46,7 +46,7 @@ return (
           id="4"
           className="bg-[#0173b9] px-6 py-2 rounded-full text-white h-[40px] lg:w-[146px] lg:h-[40px] md:w-[140px] md:h-[40px]"
         >
-          Filter
+          Sonuçlar
         </button>
       </div>
     </div>
