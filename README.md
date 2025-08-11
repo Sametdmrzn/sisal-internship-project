@@ -5,11 +5,11 @@ Bu proje, yayında olan Milli Piyango sitesinin sonuçlar sayfasına çok benzer
 Amaç, mevcut sayfanın kullanıcı deneyimini ve görsel yapısını koruyarak tekrar tasarlanmasıdır.
 
 ## Tech/Framework used
-html
-css
-tailwind
-javascript
-react
+**html**
+**css**
+**tailwind**
+**javascript**
+**react**
 
 ## Proje Linki
 [Figma-](https://github.com/Sametdmrzn/Figma-)
@@ -17,8 +17,13 @@ react
 
 ## Kurulum
 
+Projeyi ayağa kaldırmak için:
+-npm start
+
 Projeyi yerel makinenize klonlamak için:
 
 ```bash
 git clone https://github.com/Sametdmrzn/Figma-.git
 cd Figma-
+
+
