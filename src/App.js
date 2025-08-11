@@ -31,8 +31,8 @@ function App() {
         logoSrc={logoSrc}               //  ProdCard'ın beklediği prop gönderiliyor
       />
 
-      <ResultChecker />
-      <Tickets />
+      <ResultChecker/>
+      <Tickets/>
 
       
     </div>

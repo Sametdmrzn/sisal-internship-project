@@ -1,4 +1,3 @@
-// ProdCard.jsx
 import React from "react";
 
 function ProdCard({ bannerColor, logoSrc }) {
@@ -13,16 +12,16 @@ function ProdCard({ bannerColor, logoSrc }) {
           <img src={logoSrc} alt="active game logo"/>
         </div>
 
-        {/* Menü */}
+        {/* Menu */}
         <ul className="flex flex-wrap gap-2 justify-center md:justify-end flex-nowrap">
           <li className="flex-1 min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
-            <a href="#" className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Hemen oyna</a>
+            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Hemen oyna</div>
           </li>
           <li className="flex-1 min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
-            <a href="#" className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Nasıl Oynanır</a>
+            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Nasıl Oynanır</div>
           </li>
           <li className="flex-1 min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
-            <a href="#" className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Sonuclar</a>
+            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Sonuclar</div>
           </li>
         </ul>
       </div>
