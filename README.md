@@ -1,8 +1,8 @@
 # Fluttersea Trainee Project
 
-## Açıklama
-Bu proje, yayında olan Milli Piyango sitesinin sonuçlar sayfasına çok benzer bir yapıyı yeniden oluşturmayı amaçlamaktadır.  
-Amaç, mevcut sayfanın kullanıcı deneyimini ve görsel yapısını koruyarak tekrar tasarlanmasıdır.
+## EXPLANATİON
+This project aims to recreate a structure very similar to the results page of the current National Lottery website.
+The goal is to redesign the existing page while preserving its user experience and visual structure.
 
 ## Tech/Framework used
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
@@ -12,16 +12,17 @@ Amaç, mevcut sayfanın kullanıcı deneyimini ve görsel yapısını koruyarak 
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 
-## Proje Linki
+## Project Link
 [Figma-](https://github.com/Sametdmrzn/Figma-)
 
 
 ## Kurulum
 
-Projeyi ayağa kaldırmak için:
+To start the project:
+-npm install
 -npm start
 
-Projeyi yerel makinenize klonlamak için:
+To clone the project to your local machine:
 
 ```bash
 git clone https://github.com/Sametdmrzn/Figma-.git
