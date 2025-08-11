@@ -59,7 +59,6 @@ const buttonData = [
       icon: "/assets/MainContent-Assets/superloto-Negative.svg",
       border: "border-[1px] border-[#cc442b]",
       bg: "bg-[#FF5100]",
-      // DÜZELTİLDİ: baştaki boşluk kaldırıldı
       bgbanner: "bg-gradient-to-b from-[#FF5102] to-[#FE793C]",
       textColor: "text-[#cc442b]",
     },
@@ -106,18 +105,16 @@ function MainContent({ activeButton, setActiveButton, setBannerColor, setLogoSrc
           <li className="text-blue-500">Çekiliş Sonuçları</li>
         </ol>
       </div>
-
+      
       <div className="flex overflow-x-auto scrollbar-hidden justify-start mt-9 gap-4 whitespace-nowrap">
         {buttonData.map(({ id, text, icon, default: def, active }) => {
           const isActive = activeButton === id;
-          const { border, bg, bgbanner, textColor } = isActive ? active : def;
+          const { border, bg, textColor } = isActive ? active : def;
           const currentIcon = isActive && active.icon ? active.icon : icon;
 
           const handleClick = () => {
             setActiveButton(id);
-            // Banner arka planı: aktif butonun bgbanner’ı
-            setBannerColor(active.bgbanner);
-            // Logo: aktif ikon varsa onu, yoksa normal icon'u setle
+            setBannerColor(active.bg);
             setLogoSrc(active.icon || icon || "/assets/default-logo.svg");
           };
 

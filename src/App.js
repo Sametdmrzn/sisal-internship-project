@@ -1,19 +1,18 @@
-import { useState } from 'react';
+import react, { useEffect, useState  } from 'react';
+import axios from 'axios';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
 import ProdCard from './components/ProdCard';
 import ResultChecker from './components/ResultChecker';
+import Tickets from './components/Tickets';
 
 function App() {
-  // Başlangıçta 1. butonu aktif yapabilirsiniz (MainContent'teki buttonData id'leriyle uyumluysa)
   const [activeButton, setActiveButton] = useState(1);
-
-  // Banner arka planı Tailwind sınıfı olarak tutuluyor
   const [bannerColor, setBannerColor] = useState('bg-[#005C95]');
-
-  // Dinamik logo için state ekleyelim (ProdCard bunu kullanıyor)
   const [logoSrc, setLogoSrc] = useState('/assets/default-logo.svg');
+ 
+
 
   return (
     <div className="App">
@@ -32,7 +31,10 @@ function App() {
         logoSrc={logoSrc}               //  ProdCard'ın beklediği prop gönderiliyor
       />
 
-      <ResultChecker />
+      <ResultChecker/>
+      <Tickets/>
+
+      
     </div>
   );
 }

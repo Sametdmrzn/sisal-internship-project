@@ -1,67 +1,67 @@
 import React from "react";
 
-function Header() {
+function Navbar() {
   return (
     <>
       {/* Navbar */}
       <nav className="relative flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white h-[60px]  ">
-        {/* Desktop Menü */}
-        <ul className="hidden md:flex gap-4 items-center">
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-4 items-center cursor-pointer">
           <li className="relative group items-center">
-            <a>Sayısal Oyunlar</a>
+            <span className="flex h-[60px] items-center ">Sayısal Oyunlar</span>
             {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block left-0 top-[40px] bg-[#169AD6] w-[200px] p-2  text-white  rounded shadow-lg z-50">
+
+            <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px] text-white  rounded shadow-lg z-50">
+
+
+
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
+                <div className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Sayısal Loto
-                </a>
+                </div>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
+                <div className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Süper Loto
-                </a>
+                </div>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
+                <div className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Şans Topu
-                </a>
+                </div>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-[#23AAE2]">
+                <div className="block px-4 py-2 hover:bg-[#23AAE2]">
                   On Numara
-                </a>
+                </div>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#">Kazı Kazan</a>
+            <div>Kazı Kazan</div>
           </li>
           <li>
-            <a href="#">Sanal Oyunlar</a>
+            <div>Sanal Oyunlar</div>
           </li>
           <li>
-            <a href="#">Milli Piyango</a>
+            <div>Milli Piyango</div>
           </li>
           <li>
-            <a href="#" >Hızlı On</a>
-          </li>
-          <li className="border-r"></li>
-          <li>
-            <a href="#"></a>
+            <div>Hızlı On</div>
           </li>
           <li className="relative group">
-            <a href="#">Sonuçlar</a>
-            {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block left-0 top-[40px] w-[200px] p-2 bg-[#169AD6]  text-white  rounded shadow-lg z-50">
+
+            <div className=" flex items-center h-[60px]" >Sonuçlar</div>
+            {/* Dropdown menu */}
+            <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px]  text-white  rounded shadow-lg z-50">
+
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">
-                  Çekilişler
-                </a>
+                <div className="block px-4 py-2 hover:bg-[#23AAE2]">Çekilişler</div>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                <div className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Çekiliş Videoları
-                </a>
+                </div>
               </li>
             </ul>
           </li>
@@ -69,30 +69,23 @@ function Header() {
 
         <ul className="hidden md:flex gap-4">
           <li><img className="w-6 h-6" src="/assets/MainContent-Assets/Union (2).svg"></img></li>
-          <li><a>Kampanyalar</a></li>
+          <li>Kampanyalar</li>
           <li><img className="w-6 h-6" src="/assets/MainContent-Assets/Calendar.svg"></img></li>
           <li className="border-r"></li>
           <li><img className="w-6 h-6" src="/assets/MainContent-Assets/Tv.svg"></img></li>
-          <li className="border-r"></li>
+          <li id="divider"></li>
           <li><img className="w-6 h-6" src="/assets/MainContent-Assets/Calendar.svg"></img></li>
-
         </ul>
-
-
-
-
-
-
       </nav>
 
-      {/* Mobil Menü */}
+      {/* Mobile Menu */}
       <div
         id="mobileMenu"
         className="fixed top-0 left-0 w-full h-full bg-white z-40 hidden flex flex-col items-center justify-center gap-4"
       >
-        <a href="#">Menü</a>
-        <a href="#">Hakkımızda</a>
-        <a href="#">İletişim</a>
+        <div>Menü</div>
+        <div>Hakkımızda</div>
+        <div>İletişim</div>
         <button id="closeBtn" className="text-red-500">
           Kapat
         </button>
@@ -101,4 +94,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;
