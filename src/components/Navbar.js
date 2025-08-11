@@ -10,7 +10,11 @@ function Navbar() {
           <li className="relative group items-center">
             <span className="flex h-[60px] items-center ">Sayısal Oyunlar</span>
             {/* Dropdown */}
+
             <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px] text-white  rounded shadow-lg z-50">
+
+
+
               <li>
                 <div className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Sayısal Loto
@@ -46,9 +50,11 @@ function Navbar() {
             <div>Hızlı On</div>
           </li>
           <li className="relative group">
+
             <div className=" flex items-center h-[60px]" >Sonuçlar</div>
             {/* Dropdown menu */}
             <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px]  text-white  rounded shadow-lg z-50">
+
               <li>
                 <div className="block px-4 py-2 hover:bg-[#23AAE2]">Çekilişler</div>
               </li>
