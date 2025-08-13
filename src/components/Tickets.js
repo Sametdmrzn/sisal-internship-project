@@ -25,17 +25,17 @@ function Tickets(){
         const nextJackpot = item.last.drawDetail.attributes.find(attr => attr.name === "jackpot")?.value;
 
         return (
-          <div className="flex bg-white border-solid border-2 my-2 p-3 shadow-lg rounded-sm" key={index}>
-             <div className="w-16 h-16 flex items-center justify-center">
+          <div className="flex bg-white border-solid  my-2 p-3 shadow-lg rounded-sm" key={index}>
+             <div className=" flex items-center justify-center">
               <img
                 src={buttonImages[gameCode]}
                 alt={gameCode}
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-full object-contain w-[150px] h-[90px] justify-center"
               />
             </div>
 
-            <div>
-              <div>
+            <div className='w-[350px]'>
+              <div className=''>
                 <div>
                   Çekiliş No
                   <div>{lastDrawNumber}</div>
@@ -52,7 +52,7 @@ function Tickets(){
                   winning.numbers.map((num,j) => (
                     <span
                       key={`${i}-${j}`}
-                      className='bg-red-600 rounded-full text-white text-sm px-2 py-1'>
+                      className='bg-red-600 rounded-full text-white max-w- text-sm px-2 py-1'>
                         {num}
                     </span>
                   )))}
@@ -62,7 +62,7 @@ function Tickets(){
               <div>DETAYLAR</div>
             </div>
 
-            <div>
+            <div className='bg-gradient-to-b from-[#DF081A] to-[#FB636F] p-8 text-white ml-auto'>
               <div>
                 SIRADAKİ ÇEKİLİŞ <span>{nextDrawNumber}</span>
               </div>
