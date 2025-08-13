@@ -1,5 +1,6 @@
 import React, { useEffect, useState  } from 'react';
 import axios from 'axios';
+import buttonImages from '../data/buttonImages';
 
 function Tickets(){
   const [games,setGames] = useState ([]);
@@ -8,17 +9,13 @@ function Tickets(){
   useEffect(() => {
   const apiUrl = process.env.REACT_APP_API_URL;
     axios.get(`${apiUrl}`)
-      .then(res => {
-        setGames(res.data);
-        console.log(res.data);
-      })
-      .catch(() => {    
-        setError("data could not be received");
-      });
+      .then(res => setGames(res.data))
+      .catch(() => setError("data could not be received"));
+
   }, []);
 
   return (
-    <div>
+    <div className='bg-white p-4 max-w-[1024px] mx-auto'>
       {games.map((item, index) => {
         const gameCode = item.next.drawDetail.attributes.find(attr => attr.name === "static.game.acronym")?.value || "Bilinmiyor";
         const lastDrawNumber = item.last.drawDetail.drawId.number;
@@ -27,11 +24,14 @@ function Tickets(){
         const nextDrawNumber = item.next.drawDetail.drawId.number;
         const nextJackpot = item.last.drawDetail.attributes.find(attr => attr.name === "jackpot")?.value;
 
-
         return (
-          <div className="flex bg-white mx-auto w-[1024px] border-solid border-2 my-2 p-3 shadow-lg rounded-sm" key={index}>
-            <div className=''>
-              <span>{gameCode}</span>
+          <div className="flex bg-white border-solid border-2 my-2 p-3 shadow-lg rounded-sm" key={index}>
+             <div className="w-16 h-16 flex items-center justify-center">
+              <img
+                src={buttonImages[gameCode]}
+                alt={gameCode}
+                className="max-w-full max-h-full object-contain"
+              />
             </div>
 
             <div>
@@ -47,7 +47,15 @@ function Tickets(){
 
               <div>
                 
-                {item.last.drawDetail.winningNumbers?.map(w => w.numbers?.map(item => <span className='bg-black rounded-full text-white'>{item}</span>))}
+
+                {item.last.drawDetail.winningNumbers?.map((winning,i) => 
+                  winning.numbers.map((num,j) => (
+                    <span
+                      key={`${i}-${j}`}
+                      className='bg-red-600 rounded-full text-white text-sm px-2 py-1'>
+                        {num}
+                    </span>
+                  )))}
 
               </div>
 
