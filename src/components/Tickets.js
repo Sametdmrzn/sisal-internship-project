@@ -33,45 +33,34 @@ function Tickets(){
                 className="max-w-full max-h-full object-contain w-[150px] h-[90px] justify-center"
               />
             </div>
-
-            <div className='w-[350px]'>
-              <div className=''>
-                <div>
-                  Çekiliş No
-                  <div>{lastDrawNumber}</div>
-                </div>
-                <span>{lastDrawDate}</span>
-                <span> -- </span>
-                <span>{lastDrawTime}</span>
-              </div>
-
+            <div className='w-[350px] ml-[40px]'>
               <div>
-                
-
+                <div className='h-[30px]'>
+                  Çekiliş No :
+                  <span> {lastDrawNumber}  {lastDrawDate} - {lastDrawTime}</span>
+                </div>
+              </div>
+              <div className='flex flex-wrap gap-1'>
                 {item.last.drawDetail.winningNumbers?.map((winning,i) => 
                   winning.numbers.map((num,j) => (
                     <span
                       key={`${i}-${j}`}
-                      className='bg-red-600 rounded-full text-white max-w- text-sm px-2 py-1'>
+                      className='flex items-center justify-center bg-[#EA0029] rounded-full text-white text-sm px-2 py-1 h-[35px] w-[35px] mt-2'>
                         {num}
                     </span>
                   )))}
-
               </div>
-
-              <div>DETAYLAR</div>
+              <div className='mt-9 text-[#169ad6] font-normal text-sm'>DETAYLAR</div>
             </div>
-
-            <div className='bg-gradient-to-b from-[#DF081A] to-[#FB636F] p-8 text-white ml-auto'>
+            <div className='relative bg-gradient-to-b from-[#DF081A] to-[#FB636F] p-8 text-white ml-auto'>
               <div>
                 SIRADAKİ ÇEKİLİŞ <span>{nextDrawNumber}</span>
               </div>
               <span>{nextJackpot}</span>
-              <div>HEMEN OYNA</div>
+              <div className='absolute p-2 bg-white rounded-full text-black text-center bottom-2 '>HEMEN OYNA</div>
             </div>
           </div>
         );
-
       })}
     </div>
   );
