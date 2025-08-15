@@ -9,7 +9,7 @@ const buttonData = [
       code: null,
     },
     active: {
-      border: "border-[1px] border-transparent",
+      border: "border-[1px] border-[#1d57a6]",
       bg: "bg-[#005C95]",
       bgbanner: "bg-[#005C95]",
       textColor: "text-white",

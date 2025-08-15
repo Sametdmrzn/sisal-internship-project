@@ -17,8 +17,6 @@ function Tickets({ activeButton }) {
 
   const activeButtonData = buttonData.find((btn) => btn.id === activeButton);
 
-  console.log("Games:", games);
-
   const filteredTickets =
     activeButtonData?.default.code || activeButtonData?.active.code
       ? games.filter((item) => {
@@ -27,13 +25,6 @@ function Tickets({ activeButton }) {
               (attr) => attr.name === "static.game.acronym"
             )?.value || "Unknown";
 
-          console.log(
-            "Filtering:",
-            "active code:",
-            activeButtonData.default.code || activeButtonData.active.code,
-            "game code:",
-            gameCode
-          );
           return (
             gameCode ===
             (activeButtonData.default.code || activeButtonData.active.code)
@@ -52,6 +43,10 @@ function Tickets({ activeButton }) {
           item.next.drawDetail.attributes.find(
             (attr) => attr.name === "static.game.acronym"
           )?.value || "Bilinmiyor";
+        const gameButton = buttonData.find(
+          (btn) => btn.default.code === gameCode || btn.active.code === gameCode
+        );
+        const ticketBg = gameButton?.active.bgbanner;
         const lastDrawNumber = item.last.drawDetail.drawId.number;
         const lastDrawDate = new Date(
           item.last.drawDetail.drawDate
@@ -106,7 +101,9 @@ function Tickets({ activeButton }) {
                 DETAYLAR
               </div>
             </div>
-            <div className="relative bg-gradient-to-b from-[#DF081A] to-[#FB636F] w-[228px] text-white ml-auto flex p-2 flex-col justify-between items-end">
+            <div
+              className={`relative bg-gradient-to-b ${ticketBg} w-[228px] text-white ml-auto flex p-2 flex-col justify-between items-end`}
+            >
               <div className="flex flex-col">
                 <div className="text-white text-end text-[12px] mt-3 ">
                   SIRADAKİ ÇEKİLİŞ

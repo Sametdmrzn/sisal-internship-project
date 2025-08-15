@@ -25,7 +25,7 @@ function MainContent({
 
           const handleClick = () => {
             setActiveButton(id);
-            setBannerColor(active.bg);
+            setBannerColor(active.bgbanner);
             setLogoSrc(active.icon || icon || "/assets/default-logo.svg");
           };
 
