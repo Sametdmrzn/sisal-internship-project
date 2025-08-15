@@ -35,7 +35,7 @@ function Header() {
             id="loginBtn"
             className="min-w-[100px] md:min-w-[120px] bg-[#0173b9] text-white py-2 px-4 rounded-full text-sm md:text-base font-bold"
           >
-            Üye Girişi  
+            Üye Girişi
           </button>
           <button
             id="registerBtn"
@@ -43,9 +43,11 @@ function Header() {
           >
             Üye Ol
           </button>
-          <img src="/assets/MainContent-Assets/Page 1 (1).svg"
-          className="bg-[#40CD8C] p-2 rounded ml-8 hidden md:flex "
-          alt=""/>
+          <img
+            src="/assets/MainContent-Assets/Page 1 (1).svg"
+            className="bg-[#40CD8C] p-2 rounded ml-8 hidden md:flex "
+            alt=""
+          />
         </div>
       </div>
     </header>

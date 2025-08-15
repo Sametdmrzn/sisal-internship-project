@@ -9,19 +9,25 @@ function ProdCard({ bannerColor, logoSrc }) {
       <div className="flex items-center justify-between flex-nowrap gap-4 w-full">
         {/* Logo */}
         <div className="min-w-[80px] w-20 md:w-28">
-          <img src={logoSrc} alt="active game logo"/>
+          <img src={logoSrc} alt="active game logo" />
         </div>
 
         {/* Menu */}
         <ul className="flex flex-wrap gap-2 justify-center md:justify-end flex-nowrap">
           <li className="flex-1 min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
-            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Hemen oyna</div>
+            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">
+              Hemen oyna
+            </div>
           </li>
           <li className="flex-1 min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
-            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Nasıl Oynanır</div>
+            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">
+              Nasıl Oynanır
+            </div>
           </li>
           <li className="flex-1 min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
-            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">Sonuclar</div>
+            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">
+              Sonuclar
+            </div>
           </li>
         </ul>
       </div>
