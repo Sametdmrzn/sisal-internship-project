@@ -46,6 +46,7 @@ function Tickets({ activeButton }) {
         const gameButton = buttonData.find(
           (btn) => btn.default.code === gameCode || btn.active.code === gameCode
         );
+        const joker = item.last.drawDetail.winningNumbers.name;
         const ticketBg = gameButton?.active.bgbanner;
         const numberBg = gameButton?.active.bg;
         const lastDrawNumber = item.last.drawDetail.drawId.number;
@@ -88,14 +89,31 @@ function Tickets({ activeButton }) {
               </div>
               <div className="flex flex-wrap gap-1 font-medium">
                 {item.last.drawDetail.winningNumbers?.map((winning, i) =>
-                  winning.numbers.map((num, j) => (
-                    <span
-                      key={`${i}-${j}`}
-                      className={`flex items-center  bg-gradient-to-b ${numberBg} justify-center rounded-full text-white text-[19px] px-2 py-1 h-[35px] w-[35px] mt-2`}
-                    >
-                      {num}
-                    </span>
-                  ))
+                  winning.numbers.map((num, j) => {
+                    const test =
+                      winning.id === 2
+                        ? "bg-[#169ad6]"
+                        : winning.id === 3
+                        ? "bg-[#ffe103]"
+                        : "";
+
+                    const textColor =
+                      winning.id === 3 ? "text-black" : "text-white";
+                    const topLabel =
+                      winning.id === 2
+                        ? "joker"
+                        : winning.id === 3
+                        ? "SüperStar"
+                        : "";
+
+                    return (
+                      <span
+                        className={`flex items-center bg-gradient-to-b ${numberBg} ${test} justify-center rounded-full text-white text-[19px] px-2 py-1 h-[35px] w-[35px] mt-2`}
+                      >
+                        {num}
+                      </span>
+                    );
+                  })
                 )}
               </div>
               <div className="mt-3 text-[#169ad6] font-normal text-sm cursor-pointer">
