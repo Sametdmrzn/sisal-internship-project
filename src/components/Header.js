@@ -24,7 +24,7 @@ function Header() {
             </svg>
           </button>
           <img
-            src="/assets/MainContent-Assets/Main.svg"
+            src="/assets/MainContent-Assets/mainLogo.svg"
             className="w-auto max-w-[100px] h-auto ml-3"
           />
         </div>
