@@ -99,10 +99,10 @@ function Tickets({ activeButton }) {
                     const textColor =
                       winning.id === 3 ? "text-[#383838]" : "text-white ";
                     const topLabel =
-                      winning.id === 2
-                        ? "JOKER"
-                        : winning.id === 3
-                        ? "SÜPERSTAR"
+                      winning.name === "joker"
+                        ? "Joker"
+                        : winning.name === "superstar"
+                        ? "SüperStar"
                         : "";
 
                     return (
