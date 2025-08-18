@@ -33,7 +33,7 @@ function MainContent({
             <span
               key={id}
               onClick={handleClick}
-              className={`${border} ${bg} ${textColor} rounded-[6px] flex items-center justify-center gap-[16px] min-w-[70px] lg:h-[40px] min-h-[34px] text-xs sm:h-[38px] lg:min-w-[120px] sm:w-[34px] cursor-pointer select-none px-3`}
+              className={`rounded-[6px] flex items-center justify-center gap-[16px] min-w-[70px] lg:h-[40px] min-h-[34px] text-xs sm:h-[38px] lg:min-w-[120px] sm:w-[34px] cursor-pointer select-none px-3 ${border} ${bg} ${textColor} `}
             >
               {currentIcon ? <img src={currentIcon} alt="button icon" /> : text}
             </span>

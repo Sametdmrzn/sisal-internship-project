@@ -46,7 +46,6 @@ function Tickets({ activeButton }) {
         const gameButton = buttonData.find(
           (btn) => btn.default.code === gameCode || btn.active.code === gameCode
         );
-        const joker = item.last.drawDetail.winningNumbers.name;
         const ticketBg = gameButton?.active.bgbanner;
         const numberBg = gameButton?.active.bg;
         const lastDrawNumber = item.last.drawDetail.drawId.number;

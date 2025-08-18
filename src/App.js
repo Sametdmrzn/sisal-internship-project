@@ -21,13 +21,10 @@ function App() {
         activeButton={activeButton}
         setActiveButton={setActiveButton}
         setBannerColor={setBannerColor}
-        setLogoSrc={setLogoSrc} // tanımlı state setter gönderiliyor
+        setLogoSrc={setLogoSrc}
       />
 
-      <ProdCard
-        bannerColor={bannerColor}
-        logoSrc={logoSrc} //  ProdCard'ın beklediği prop gönderiliyor
-      />
+      <ProdCard bannerColor={bannerColor} logoSrc={logoSrc} />
 
       <Tickets activeButton={activeButton} />
     </div>
