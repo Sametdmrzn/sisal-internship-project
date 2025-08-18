@@ -76,7 +76,7 @@ function Tickets({ activeButton }) {
                 className="max-w-full max-h-full object-contain w-[150px] h-[90px] justify-center"
               />
             </div>
-            <div className="w-[350px] ml-[40px]">
+            <div className="w-[360px] ml-[40px]">
               <div>
                 <div className="h-[30px] text-[#4f4f4f]">
                   <span className="text-[14px] font-medium">
@@ -87,35 +87,45 @@ function Tickets({ activeButton }) {
                   </span>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-1 font-medium">
+              <div className="flex flex-wrap gap-2 font-medium items-end">
                 {item.last.drawDetail.winningNumbers?.map((winning, i) =>
                   winning.numbers.map((num, j) => {
-                    const test =
+                    const numberDynamicBg =
                       winning.id === 2
                         ? "bg-[#169ad6]"
                         : winning.id === 3
                         ? "bg-[#ffe103]"
-                        : "";
-
+                        : numberBg;
                     const textColor =
-                      winning.id === 3 ? "text-black" : "text-white";
+                      winning.id === 3 ? "text-[#383838]" : "text-white ";
                     const topLabel =
                       winning.id === 2
-                        ? "joker"
+                        ? "JOKER"
                         : winning.id === 3
-                        ? "SüperStar"
+                        ? "SÜPERSTAR"
                         : "";
 
                     return (
-                      <span
-                        className={`flex items-center bg-gradient-to-b ${numberBg} ${test} justify-center rounded-full text-white text-[19px] px-2 py-1 h-[35px] w-[35px] mt-2`}
+                      <div
+                        key={`${i}-${j}`}
+                        className="flex relative flex-col items-center"
                       >
-                        {num}
-                      </span>
+                        {topLabel && (
+                          <span className="text-[10px] text-[#383838] mb-1">
+                            {topLabel}
+                          </span>
+                        )}
+                        <span
+                          className={`flex items-center justify-center ${numberDynamicBg} ${textColor} rounded-full text-[19px] px-2 py-1 h-[35px] w-[35px]`}
+                        >
+                          {num}
+                        </span>
+                      </div>
                     );
                   })
                 )}
               </div>
+
               <div className="mt-3 text-[#169ad6] font-normal text-sm cursor-pointer">
                 DETAYLAR
               </div>
