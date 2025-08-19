@@ -49,6 +49,9 @@ function Tickets({ activeButton }) {
         const ticketBg = gameButton?.active.bgbanner;
         const numberBg = gameButton?.active.bg;
         const lastDrawNumber = item.last.drawDetail.drawId.number;
+        const nextDrawDate = new Date(
+          item.next.drawDetail.drawDate
+        ).toLocaleDateString();
         const lastDrawDate = new Date(
           item.last.drawDetail.drawDate
         ).toLocaleDateString();
@@ -135,7 +138,7 @@ function Tickets({ activeButton }) {
               <div className="flex flex-col">
                 <div className="text-white text-end text-[12px] mt-3 ">
                   SIRADAKİ ÇEKİLİŞ
-                  <span className="font-bold ">{lastDrawDate}</span>
+                  <span className="font-bold ">{nextDrawDate}</span>
                 </div>
                 <div className="relative flex justify-end">
                   <span className="font-medium text-[30px]">505,3</span>
