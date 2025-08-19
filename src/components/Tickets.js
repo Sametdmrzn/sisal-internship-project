@@ -47,8 +47,6 @@ function Tickets({ activeButton }) {
           (btn) => btn.default.code === gameCode || btn.active.code === gameCode
         );
 
-        const ticketBg = gameButton?.active.bgbanner;
-        const numberBg = gameButton?.active.bg;
         const lastDrawNumber = item.last.drawDetail.drawId.number;
         const nextDrawDate = new Date(
           item.next.drawDetail.drawDate
@@ -98,7 +96,7 @@ function Tickets({ activeButton }) {
                         ? "bg-[#169ad6]"
                         : winning.id === 3
                         ? "bg-[#ffe103]"
-                        : numberBg;
+                        : gameButton?.active.bg;
                     const textColor =
                       winning.id === 3 ? "text-[#383838]" : "text-white ";
                     const topLabel =
@@ -119,7 +117,7 @@ function Tickets({ activeButton }) {
                           </span>
                         )}
                         <span
-                          className={`flex items-center justify-center ${numberDynamicBg} ${textColor} rounded-full text-[19px] px-2 py-1 h-[35px] w-[35px]`}
+                          className={`flex items-center justify-center rounded-full text-[19px] px-2 py-1 h-[35px] w-[35px] ${numberDynamicBg} ${textColor}`}
                         >
                           {num}
                         </span>
@@ -134,7 +132,7 @@ function Tickets({ activeButton }) {
               </div>
             </div>
             <div
-              className={`relative bg-gradient-to-b ${ticketBg} w-[228px] text-white ml-auto flex p-2 flex-col justify-between items-end`}
+              className={`relative bg-gradient-to-b w-[228px] text-white ml-auto flex p-2 flex-col justify-between items-end ${gameButton?.active.bgbanner}`}
             >
               <div className="flex flex-col">
                 <div className="text-white text-end text-[12px] mt-3 ">
