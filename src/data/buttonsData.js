@@ -44,7 +44,7 @@ const buttonData = [
       code: "SUPERLOTO",
     },
     active: {
-      icon: "/assets/MainContent-Assets/superloto-Negative.svg",
+      icon: "/assets/MainContent-Assets/superlotoNegative.svg",
       border: "border-[1px] border-[#cc442b]",
       bg: "bg-[#FF5100]",
       bgbanner: "bg-gradient-to-b from-[#FF5102] to-[#FE793C]",

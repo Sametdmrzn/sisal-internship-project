@@ -66,14 +66,14 @@ function Navbar() {
           <li>
             <img
               className="w-6 h-6"
-              src="/assets/MainContent-Assets/Campaigns.svg"
+              src="/assets/MainContent-Assets/campaigns.svg"
             ></img>
           </li>
           <li>Kampanyalar</li>
           <li>
             <img
               className="w-6 h-6"
-              src="/assets/MainContent-Assets/Calendar.svg"
+              src="/assets/MainContent-Assets/calendar.svg"
             ></img>
           </li>
           <li className="border-r"></li>
@@ -87,7 +87,7 @@ function Navbar() {
           <li>
             <img
               className="w-6 h-6"
-              src="/assets/MainContent-Assets/Calendar.svg"
+              src="/assets/MainContent-Assets/calendar.svg"
             ></img>
           </li>
         </ul>

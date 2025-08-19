@@ -47,6 +47,7 @@ function Tickets({ activeButton }) {
           (btn) => btn.default.code === gameCode || btn.active.code === gameCode
         );
 
+        const numberBg = gameButton?.active.bg;
         const lastDrawNumber = item.last.drawDetail.drawId.number;
         const nextDrawDate = new Date(
           item.next.drawDetail.drawDate
@@ -96,7 +97,7 @@ function Tickets({ activeButton }) {
                         ? "bg-[#169ad6]"
                         : winning.id === 3
                         ? "bg-[#ffe103]"
-                        : gameButton?.active.bg;
+                        : numberBg;
                     const textColor =
                       winning.id === 3 ? "text-[#383838]" : "text-white ";
                     const topLabel =
