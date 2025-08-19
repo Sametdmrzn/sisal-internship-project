@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import MainContent from "./components/MainContent";
 import ProdCard from "./components/ProdCard";
-import ResultChecker from "./components/ResultChecker";
 import Tickets from "./components/Tickets";
 
 function App() {

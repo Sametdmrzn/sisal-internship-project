@@ -18,7 +18,7 @@ const buttonData = [
   },
   {
     id: 2,
-    icon: "/assets/MainContent-assets/SYL.svg",
+    icon: "/assets/MainContent-assets/sayısalloto.svg",
     default: {
       border: "border-[1px] border-[#EA0029]",
       bg: "bg-white",
@@ -26,7 +26,7 @@ const buttonData = [
       code: "SAYISALLOTO",
     },
     active: {
-      icon: "/assets/MainContent-Assets/Lottery Game Logo-Negative.svg",
+      icon: "/assets/MainContent-Assets/sayısallotonegative.svg",
       border: "border-[1px] border-[#EA0029]",
       bg: "bg-[#EA0029]",
       bgbanner: "bg-gradient-to-b from-[#DF0D1E] to-[#F03F4F]",
@@ -36,7 +36,7 @@ const buttonData = [
   },
   {
     id: 3,
-    icon: "/assets/MainContent-Assets/SL.svg",
+    icon: "/assets/MainContent-Assets/superloto.svg",
     default: {
       border: "border-[1px] border-[#F56343]",
       bg: "bg-white",
@@ -54,7 +54,7 @@ const buttonData = [
   },
   {
     id: 4,
-    icon: "/assets/MainContent-Assets/ST-line.svg",
+    icon: "/assets/MainContent-Assets/sanstopudesktop.svg",
     default: {
       border: "border-[1px] border-[#F56343]",
       bg: "bg-white",
@@ -71,7 +71,7 @@ const buttonData = [
   },
   {
     id: 5,
-    icon: "/assets/MainContent-Assets/MP Playslips Dikey Logolar_ON_outline.svg",
+    icon: "/assets/MainContent-Assets/onnumaradesktop.svg",
     default: {
       border: "border-[1px] border-[#F56343]",
       bg: "bg-white",
