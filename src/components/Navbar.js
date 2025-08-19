@@ -5,7 +5,7 @@ function Navbar() {
     <>
       <nav className="relative flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white h-[60px]">
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-4 items-center cursor-pointer">
+        <ul className="hidden md:flex gap-[20px] items-center cursor-pointer">
           <li className="relative group items-center">
             <span className="flex h-[60px] items-center ">Sayısal Oyunlar</span>
             {/* Dropdown */}
