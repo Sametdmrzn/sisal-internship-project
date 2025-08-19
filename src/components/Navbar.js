@@ -87,7 +87,7 @@ function Navbar() {
           <li>
             <img
               className="w-6 h-6"
-              src="/assets/MainContent-Assets/calendar.svg"
+              src="/assets/MainContent-Assets/blogİcon.svg"
             ></img>
           </li>
         </ul>
