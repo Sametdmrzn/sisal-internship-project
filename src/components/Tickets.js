@@ -42,10 +42,11 @@ function Tickets({ activeButton }) {
         const gameCode =
           item.next.drawDetail.attributes.find(
             (attr) => attr.name === "static.game.acronym"
-          )?.value || "Bilinmiyor";
+          )?.value || "Unknown";
         const gameButton = buttonData.find(
           (btn) => btn.default.code === gameCode || btn.active.code === gameCode
         );
+
         const ticketBg = gameButton?.active.bgbanner;
         const numberBg = gameButton?.active.bg;
         const lastDrawNumber = item.last.drawDetail.drawId.number;

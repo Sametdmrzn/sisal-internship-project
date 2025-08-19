@@ -22,9 +22,9 @@ function App() {
         setBannerColor={setBannerColor}
         setLogoSrc={setLogoSrc}
       />
-
-      <ProdCard bannerColor={bannerColor} logoSrc={logoSrc} />
-
+      {activeButton !== 1 && (
+        <ProdCard bannerColor={bannerColor} logoSrc={logoSrc} />
+      )}
       <Tickets activeButton={activeButton} />
     </div>
   );

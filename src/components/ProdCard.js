@@ -1,10 +1,11 @@
 import React from "react";
+import buttonData from "../data/buttonsData";
 
 function ProdCard({ bannerColor, logoSrc }) {
   return (
     <div
       id="topside"
-      className={`${bannerColor} flex lg:w-[1024px] lg:h-[88px] sm:w-full sm:h-[40px] text-white px-4 py-3 mt-3 mx-auto rounded-t`}
+      className={`${bannerColor} flex  lg:w-[1024px] lg:h-[88px] sm:w-full sm:h-[40px] text-white px-4 py-3 mt-3 mx-auto rounded-t`}
     >
       <div className="flex items-center justify-between flex-nowrap gap-4 w-full">
         {/* Logo */}
