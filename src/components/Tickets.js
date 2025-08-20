@@ -38,7 +38,7 @@ function Tickets({ activeButton }) {
 
   return (
     <div className="bg-white p-4 max-w-[1024px] mx-auto mt-4">
-      {filteredTickets.map((item, index) => {
+      {filteredTickets.map((item) => {
         const gameCode =
           item.next.drawDetail.attributes.find(
             (attr) => attr.name === "static.game.acronym"
@@ -65,28 +65,28 @@ function Tickets({ activeButton }) {
 
         return (
           <div
-            className="flex bg-white border-solid  my-2 p-3 shadow-lg rounded-sm"
             key={item.game}
+            className="flex flex-col items-center md:flex-row md:items-center bg-white my-2 p-4 shadow-lg rounded-sm"
           >
-            <div className="flex items-center justify-center">
+            <div className="flex items-center">
               <img
                 src={buttonImages[gameCode]}
                 alt={gameCode}
-                className="max-w-full max-h-full object-contain w-[150px] h-[90px] justify-center"
+                className="object-contain w-[120px] h-[70px] md:w-[150px] max-w-full max-h-full justify-center"
               />
             </div>
             <div className="w-[360px] ml-[40px]">
               <div>
-                <div className="h-[30px] text-[#4f4f4f]">
+                <div className="h-[30px] text-[#4f4f4f] flex gap-[25px] lg:gap-3 justify-center md:justify-start">
                   <span className="text-[14px] font-medium">
                     Çekiliş no: {lastDrawNumber}
                   </span>
                   <span className="text-[14px] text-[#4f4f4f]">
-                    {lastDrawDate} - {lastDrawTime}
+                    {lastDrawDate}-{lastDrawTime}
                   </span>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-2 font-medium items-end">
+              <div className="flex flex-wrap gap-2 font-medium items-end justify-center md:justify-start">
                 {item.last.drawDetail.winningNumbers?.map((winning, i) =>
                   winning.numbers.map((num, j) => {
                     const numberDynamicBg =
@@ -115,7 +115,7 @@ function Tickets({ activeButton }) {
                           </span>
                         )}
                         <span
-                          className={`flex items-center justify-center rounded-full text-[19px] px-2 py-1 h-[35px] w-[35px] ${numberDynamicBg} ${textColor}`}
+                          className={`flex items-center justify-center rounded-full md:text-[16px] text-[13.6px] px-2 py-1 md:h-[35px] md:w-[35px] h-[25px] w-[25px] ${numberDynamicBg} ${textColor}`}
                         >
                           {num}
                         </span>
@@ -125,25 +125,31 @@ function Tickets({ activeButton }) {
                 )}
               </div>
 
-              <div className="mt-3 text-[#169ad6] font-normal text-sm cursor-pointer">
+              <div className="my-2 text-center md:text-left text-[#169ad6] font-[14px] text-sm cursor-pointer">
                 DETAYLAR
               </div>
             </div>
             <div
-              className={`relative bg-gradient-to-b w-[228px] text-white ml-auto flex p-2 flex-col justify-between items-end ${gameButton?.active.bgbanner}`}
+              className={`relative bg-gradient-to-b h-[60px] md:h-full w-full md:w-[228px] text-white ml-auto flex p-2 flex-col justify-between items-start md:items-end ${gameButton?.active.bgbanner}`}
             >
               <div className="flex flex-col">
-                <div className="text-white text-end text-[12px] mt-3 ">
+                <div className="text-white text-end text-[11px] md:text-[12px] md:mt-3 ">
                   SIRADAKİ ÇEKİLİŞ
                   <span className="font-bold ">{nextDrawDate}</span>
                 </div>
                 <div className="relative flex justify-end">
-                  <span className="font-medium text-[30px]">505,3</span>
-                  <span className="font-medium text-[30px]">Milyon</span>
-                  <span className="font-medium text-[30px]">$</span>
+                  <span className="font-medium text-[22px] md:text-[30px]">
+                    505,3
+                  </span>
+                  <span className="font-medium text-[22px] md:text-[30px]">
+                    Milyon
+                  </span>
+                  <span className="font-medium text-[22px] md:text-[30px]">
+                    $
+                  </span>
                 </div>
               </div>
-              <div className="flex bg-white rounded-full text-[#ea0029] text-center justify-center items-center text-sm bottom-0 right-0 w-[137px] h-[32px] cursor-pointer ">
+              <div className="flex bg-white rounded-full text-[#ea0029] text-center justify-center items-center md:text[16px] text-[16px] w-[137px] h-[32px] cursor-pointer ">
                 HEMEN OYNA
               </div>
             </div>
