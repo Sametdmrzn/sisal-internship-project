@@ -43,11 +43,8 @@ function Tickets({ activeButton }) {
           item.next.drawDetail.attributes.find(
             (attr) => attr.name === "static.game.acronym"
           )?.value || "Unknown";
-        const gameButton = buttonData.find(
-          (btn) => btn.default.code === gameCode || btn.active.code === gameCode
-        );
 
-        const numberBg = gameButton?.active.bg;
+        const gameButton = buttonData.find((btn) => btn.code === gameCode);
         const lastDrawNumber = item.last.drawDetail.drawId.number;
         const nextDrawDate = new Date(
           item.next.drawDetail.drawDate
@@ -69,7 +66,7 @@ function Tickets({ activeButton }) {
         return (
           <div
             className="flex bg-white border-solid  my-2 p-3 shadow-lg rounded-sm"
-            key={index}
+            key={item.game}
           >
             <div className="flex items-center justify-center">
               <img
@@ -97,7 +94,7 @@ function Tickets({ activeButton }) {
                         ? "bg-[#169ad6]"
                         : winning.id === 3
                         ? "bg-[#ffe103]"
-                        : numberBg;
+                        : gameButton.active.bg;
                     const textColor =
                       winning.id === 3 ? "text-[#383838]" : "text-white ";
                     const topLabel =
