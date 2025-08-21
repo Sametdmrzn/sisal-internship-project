@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import MainContent from "./components/MainContent";
 import ProdCard from "./components/ProdCard";
 import Tickets from "./components/Tickets";
+import Footer from "./components/footer";
 
 function App() {
   const [activeButton, setActiveButton] = useState(1);
@@ -26,6 +27,7 @@ function App() {
         <ProdCard bannerColor={bannerColor} logoSrc={logoSrc} />
       )}
       <Tickets activeButton={activeButton} />
+      <Footer />
     </div>
   );
 }
