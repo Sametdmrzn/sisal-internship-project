@@ -17,20 +17,16 @@ function Tickets({ activeButton }) {
 
   const activeButtonData = buttonData.find((btn) => btn.id === activeButton);
 
-  const filteredTickets =
-    activeButtonData?.default.code || activeButtonData?.active.code
-      ? games.filter((item) => {
-          const gameCode =
-            item.next.drawDetail.attributes.find(
-              (attr) => attr.name === "static.game.acronym"
-            )?.value || "Unknown";
+  const filteredTickets = activeButtonData?.code
+    ? games.filter((item) => {
+        const gameCode =
+          item.next.drawDetail.attributes.find(
+            (attr) => attr.name === "static.game.acronym"
+          )?.value || "Unknown";
 
-          return (
-            gameCode ===
-            (activeButtonData.default.code || activeButtonData.active.code)
-          );
-        })
-      : games;
+        return gameCode === activeButtonData.code;
+      })
+    : games;
 
   if (error) {
     return <div className="text-red-500">{error}</div>;
@@ -66,7 +62,7 @@ function Tickets({ activeButton }) {
         return (
           <div
             key={item.game}
-            className="flex flex-col items-center md:flex-row md:items-center bg-white my-2 p-4 shadow-lg rounded-sm"
+            className="flex flex-col items-center md:flex-row md:items-center bg-white my-2 shadow-2xl rounded-sm"
           >
             <div className="flex items-center">
               <img
@@ -75,9 +71,9 @@ function Tickets({ activeButton }) {
                 className="object-contain w-[120px] h-[70px] md:w-[150px] max-w-full max-h-full justify-center"
               />
             </div>
-            <div className="w-[360px] ml-[40px]">
+            <div className="w-[300px] md:w-[360px] ml-[40px]">
               <div>
-                <div className="h-[30px] text-[#4f4f4f] flex gap-[25px] lg:gap-3 justify-center md:justify-start">
+                <div className="h-[30px] text-[#4f4f4f] flex gap-[25px] lg:gap-3 mt-[10px] justify-center md:justify-start">
                   <span className="text-[14px] font-medium">
                     Çekiliş no: {lastDrawNumber}
                   </span>
@@ -86,7 +82,7 @@ function Tickets({ activeButton }) {
                   </span>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-2 font-medium items-end justify-center md:justify-start">
+              <div className="flex flex-wrap gap-2 font-medium items-end justify-start mb-[6px] md:justify-start">
                 {item.last.drawDetail.winningNumbers?.map((winning, i) =>
                   winning.numbers.map((num, j) => {
                     const numberDynamicBg =
@@ -110,7 +106,7 @@ function Tickets({ activeButton }) {
                         className="flex relative flex-col items-center"
                       >
                         {topLabel && (
-                          <span className="text-[10px] text-[#383838] mb-1">
+                          <span className="text-[8px] md:text-[10px] text-[#383838] mb-1">
                             {topLabel}
                           </span>
                         )}
@@ -130,12 +126,12 @@ function Tickets({ activeButton }) {
               </div>
             </div>
             <div
-              className={`relative bg-gradient-to-b h-[60px] md:h-full w-full md:w-[228px] text-white ml-auto flex p-2 flex-col justify-between items-start md:items-end ${gameButton?.active.bgbanner}`}
+              className={`flex relative flex-row h-[60px] md:h-full w-full md:w-[228px] text-white ml-auto p-2 md:flex-col justify-between items-start md:items-end rounded-bl-md md:rounded-bl-none rounded-br-md md:rounded-tr-md md:rounded-br-md ${gameButton?.active.bgbanner}`}
             >
               <div className="flex flex-col">
                 <div className="text-white text-end text-[11px] md:text-[12px] md:mt-3 ">
                   SIRADAKİ ÇEKİLİŞ
-                  <span className="font-bold ">{nextDrawDate}</span>
+                  <span className="font-bold ml-1 ">{nextDrawDate}</span>
                 </div>
                 <div className="relative flex justify-end">
                   <span className="font-medium text-[22px] md:text-[30px]">
@@ -149,7 +145,7 @@ function Tickets({ activeButton }) {
                   </span>
                 </div>
               </div>
-              <div className="flex bg-white rounded-full text-[#ea0029] text-center justify-center items-center md:text[16px] text-[16px] w-[137px] h-[32px] cursor-pointer ">
+              <div className="flex bg-white rounded-full text-[#ea0029] text-center justify-center items-center text-[14px] w-[120px] h-[36px] md:w-[137px] md:h-[32px] cursor-pointer my-[6px] ">
                 HEMEN OYNA
               </div>
             </div>

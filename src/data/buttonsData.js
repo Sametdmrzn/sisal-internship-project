@@ -12,7 +12,7 @@ const buttonData = [
       border: "border-[1px] border-[#1d57a6]",
       bg: "bg-[#005C95]",
       bgbanner: "bg-[#005C95]",
-      textColor: "text-white",
+      textColor: "text-white font-bold",
       code: null,
     },
   },

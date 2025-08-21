@@ -14,19 +14,19 @@ function ProdCard({ bannerColor, logoSrc }) {
         </div>
 
         {/* Menu */}
-        <ul className="flex flex-wrap gap-2 justify-center md:justify-end flex-nowrap">
+        <ul className="flex flex-wrap justify-center md:justify-end flex-nowrap">
           <li className="flex  min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
-            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">
+            <div className="text-[12px] md:text-[14px] font-bold whitespace-nowrap">
               Hemen Oyna
             </div>
           </li>
           <li className="flex min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
-            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">
-              Nasıl Oynanır
+            <div className="text-[12px] md:text-[14px] font-bold whitespace-nowrap">
+              Nasıl Oynanır ?
             </div>
           </li>
           <li className="flex min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
-            <div className="text-[13px] md:text-[14px] font-bold whitespace-nowrap">
+            <div className="text-[12px] md:text-[14px] font-bold whitespace-nowrap">
               Sonuçlar
             </div>
           </li>
