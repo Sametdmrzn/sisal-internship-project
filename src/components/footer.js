@@ -3,12 +3,12 @@ import React from "react";
 function footer() {
   return (
     <>
-      <div className="relative bg-[#005c95] flex lg:flex-col md:mx-[30px] md:w-[980px] md:rounded-[20px] md:h-[195.03px] lg:h-[130px] lg:mx-auto bottom-[-65px]">
-        <div className="flex-col relative w-full h-full py-[15px] pl-[30px] pr-[15px]">
-          <div className="flex flex-col lg:flex-row text-white text-[19px] sm:text-[32px] mb-[20px] leading-[36px] font-medium tracking-[-0.4px] ">
+      <div className="flex relative bg-[#005c95] flex lg:flex-col md:mx-[30px] md:rounded-[20px] md:h-[195.03px] lg:h-[130px] bottom-[-65px]">
+        <div className="flex flex-col relative lg:flex-row w-full h-full md:items-start lg:items-center py-[15px] pl-[30px] pr-[15px]">
+          <div className="flex lg:flex-row text-white text-[19px] sm:text-[32px] mb-[20px] leading-[36px] font-medium tracking-[-0.4px] ">
             Yardıma mı ihtiyacın var?
           </div>
-          <div className="relative mx-auto flex flex-col md:flex-row lg:flex-row md:gap-8">
+          <div className="relative flex flex-col md:flex-row lg:flex-row md:gap-8">
             <div className="mb-[4px]">
               <div className="flex md:flex-col items-start">
                 <img
@@ -44,7 +44,7 @@ function footer() {
                     className="mr-[10px] h-[24px] w-[24px]"
                     src="/assets/MainContent-Assets/faq.svg"
                   ></img>
-                  <div className="flex-col ">
+                  <div className="flex-col">
                     <div className="text-white font-medium">
                       Sıkça Sorulan Sorular
                     </div>
@@ -61,11 +61,14 @@ function footer() {
       </div>
       <div className="flex flex-col bg-gradient-to-r from-[#005c95] to-[#0d9bf2] items-center p-4">
         <img
-          className="absolute bottom-0 h-[558px] w-[523px] bottom-auto "
+          className="absolute bottom-0 h-[588px] w-[523px] bottom-auto "
           src="/assets/MainContent-Assets/mpicontrans.avif"
         ></img>
-        <div className="w-[950px] mt-[45px] mb-[35px]">
-          <img src="/assets/MainContent-Assets/milli-logo.svg"></img>
+        <div className="w-[950px] mt-[100px] mb-[35px]">
+          <img
+            className="w-[155px] h-[69px]"
+            src="/assets/MainContent-Assets/milli-logo.svg"
+          ></img>
         </div>
         <div className="flex flex-col w-[950px] max-w-[980px]  ">
           <div className="flex flex-row  items-start justify-center">
@@ -103,7 +106,7 @@ function footer() {
                 <li>Kazan</li>
               </ul>
             </div>
-            <div className="mx-[10px] pl-[50px]">
+            <div className="mx-[10px]">
               <p className="font-bold text-white text-[16px] leading-[20px] mb-[5px]">
                 Çekiliş Sonuçları
               </p>
@@ -118,7 +121,7 @@ function footer() {
                 <li>Hızlı On Sonuçları</li>
               </ul>
             </div>
-            <div className="mx-[10px] pl-[50px]">
+            <div className="mx-[10px]">
               <p className="font-bold text-white text-[16px] leading-[20px] mb-[5px]">
                 Kurallar
               </p>
@@ -136,7 +139,7 @@ function footer() {
                 <li>Kazan Kurallar</li>
               </ul>
             </div>
-            <div className="mx-[10px] pl-[50px]">
+            <div className="mx-[10px]">
               <p className="font-bold text-white text-[16px] leading-[20px] mb-[5px]">
                 Sosyal Medya
               </p>
