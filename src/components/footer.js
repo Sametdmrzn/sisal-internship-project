@@ -5,7 +5,7 @@ function footer() {
     <>
       <div className="flex relative bg-[#005c95] flex lg:flex-col md:mx-[30px] md:rounded-[20px] md:h-[195.03px] lg:h-[130px] bottom-[-65px]">
         <div className="flex flex-col relative lg:flex-row w-full h-full md:items-start lg:items-center py-[15px] pl-[30px] pr-[15px]">
-          <div className="flex lg:flex-row text-white text-[19px] sm:text-[32px] mb-[20px] leading-[36px] font-medium tracking-[-0.4px] ">
+          <div className="flex lg:flex-row lg:w-[217px] lg:ml-[10px] text-white text-[19px] sm:text-[32px] mb-[20px] leading-[36px] font-medium tracking-[-0.4px] ">
             Yardıma mı ihtiyacın var?
           </div>
           <div className="relative flex flex-col md:flex-row lg:flex-row md:gap-8">
@@ -181,6 +181,12 @@ function footer() {
                 <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px]">
                   <div className="text-white">Galaxy Store</div>
                 </div>
+              </div>
+              <div>
+                <img
+                  className="w-[23px] h-[26px] mt-[20px]"
+                  src="/assets/MainContent-Assets/footer-social/mpQr.jpeg"
+                ></img>
               </div>
             </div>
           </div>
