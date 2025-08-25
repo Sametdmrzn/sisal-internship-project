@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
-function footer() {
+function Footer() {
   return (
     <>
-      <div className="flex relative bg-[#005c95] flex lg:flex-col md:mx-[30px] md:rounded-[20px] md:h-[195.03px] lg:h-[130px] bottom-[-65px]">
+      <div className="flex relative bg-[#005c95] lg:flex-col md:mx-[auto] md:w-[950px] md:rounded-[20px] md:h-[195.03px] lg:h-[130px] bottom-[-65px]">
         <div className="flex flex-col relative lg:flex-row w-full h-full md:items-start lg:items-center py-[15px] pl-[30px] pr-[15px]">
           <div className="flex lg:flex-row lg:w-[217px] lg:ml-[10px] text-white text-[19px] sm:text-[32px] mb-[20px] leading-[36px] font-medium tracking-[-0.4px] ">
             Yardıma mı ihtiyacın var?
@@ -61,21 +61,21 @@ function footer() {
       </div>
       <div className="flex flex-col bg-gradient-to-r from-[#005c95] to-[#0d9bf2] items-center p-4">
         <img
-          className="absolute bottom-0 h-[588px] w-[523px] bottom-auto "
+          className="absolute bottom-0 h-[588px] w-[523px] bottom-auto"
           src="/assets/MainContent-Assets/mpicontrans.avif"
         ></img>
-        <div className="w-[950px] mt-[100px] mb-[35px]">
+        <div className="mt-[100px] mb-[35px]">
           <img
             className="w-[155px] h-[69px]"
             src="/assets/MainContent-Assets/milli-logo.svg"
           ></img>
         </div>
-        <div className="flex flex-col w-[950px] max-w-[980px]  ">
-          <div className="flex flex-row  items-start justify-center">
+        <div className="flex flex-col max-w-[980px]">
+          <div className="flex flex-col md:flex-row items-start gap-3 justify-center">
             <div className="mx-[10px]">
-              <p className="font-bold text-white text-[16px] leading-[20px] mb-[5px]">
-                Sisal Şans
-              </p>
+              <div>
+                <span className="font-medium text-white">Sisal Şans</span>
+              </div>
               <ul className="list-none text-white">
                 <li>Biz Kimiz</li>
                 <li>Üyelik Sözleşmesi</li>
@@ -89,13 +89,13 @@ function footer() {
                 <li>Çerez Politikası</li>
               </ul>
             </div>
-            <div className="mx-[10px] pl-[50px]">
-              <p className="font-bold text-white text-[16px] leading-[20px] mb-[5px]">
-                Oyunlar
-              </p>
-              <ul className="list-none text-white ">
+            <div className="mx-[10px]">
+              <div>
+                <span className="font-medium text-white">Oyunlar</span>
+              </div>
+              <ul className="list-none text-white">
                 <li>Milli Piyango</li>
-                <li>Kazi Kazan</li>
+                <li>Kazı Kazan</li>
                 <li>Sanal Oyunlar</li>
                 <li>Çılgın Sayısal Loto</li>
                 <li>Süper Loto</li>
@@ -107,9 +107,11 @@ function footer() {
               </ul>
             </div>
             <div className="mx-[10px]">
-              <p className="font-bold text-white text-[16px] leading-[20px] mb-[5px]">
-                Çekiliş Sonuçları
-              </p>
+              <div>
+                <span className="font-medium text-white">
+                  Çekiliş Sonuçları
+                </span>
+              </div>
               <ul className="list-none text-white">
                 <li>Yılbaşı Çekiliş</li>
                 <li>Sonuçları</li>
@@ -122,9 +124,9 @@ function footer() {
               </ul>
             </div>
             <div className="mx-[10px]">
-              <p className="font-bold text-white text-[16px] leading-[20px] mb-[5px]">
-                Kurallar
-              </p>
+              <div>
+                <span className="font-medium text-white">Kurallar</span>
+              </div>
               <ul className="list-none text-white">
                 <li>Milli Piyango</li>
                 <li>Kurallar</li>
@@ -144,42 +146,66 @@ function footer() {
                 Sosyal Medya
               </p>
               <div>
-                <ul className="flex list-none text-white items-left">
-                  <li>
+                <ul className="flex list-none text-white items-start gap-2">
+                  <li className="flex rounded-full bg-white items-center justify-center w-[27px] h-[27px]">
                     <img
-                      src="/assets/MainContent-Assets/Tv.svg"
-                      className="w-[32px] h-[33px]"
+                      src="/assets/MainContent-Assets/footer-social/facebook.svg"
+                      className="w-[17px] h-[17px] text-[27px]"
                     ></img>
                   </li>
-                  <li>
+                  <li className="flex rounded-full bg-white items-center justify-center w-[27px] h-[27px]">
                     <img
-                      src="/assets/MainContent-Assets/Tv.svg"
-                      className="w-[32px] h-[33px]"
+                      src="/assets/MainContent-Assets/footer-social/ınstagram.svg"
+                      className="w-[17px] h-[17px] text-[27px]"
                     ></img>
                   </li>
-                  <li>
+                  <li className="flex rounded-full bg-white items-center justify-center w-[27px] h-[27px]">
                     <img
-                      src="/assets/MainContent-Assets/Tv.svg"
-                      className="w-[32px] h-[33px]"
+                      src="/assets/MainContent-Assets/footer-social/xİcon.avif"
+                      className="w-[17px] h-[17px] text-[27px]"
                     ></img>
                   </li>
                 </ul>
               </div>
-              <div className="text-white font-bold mb-[15px]">
+              <div className="text-white font-bold mt-2 mb-[10px]">
                 Uygulamamıza göz atın
               </div>
               <div className="store-buttons-container flex flex-wrap gap-[8px] w-[212px]">
-                <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px]">
-                  <div className="text-white">App Store</div>
+                <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px] gap-2">
+                  <img
+                    className="h-[13px] w-[12px]"
+                    src="/assets/MainContent-Assets/footer-social/ios.webp"
+                  ></img>
+                  <div className="text-white text-[11px] font-medium">
+                    App Store
+                  </div>
                 </div>
-                <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px]">
-                  <div className="text-white">Google Play</div>
+                <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px] gap-2">
+                  <img
+                    className="h-[13px] w-[12px]"
+                    src="/assets/MainContent-Assets/footer-social/android.png"
+                  ></img>
+                  <div className="text-white text-[11px] font-medium">
+                    Google Play
+                  </div>
                 </div>
-                <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px]">
-                  <div className="text-white">Huawei Store</div>
+                <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px] gap-2">
+                  <img
+                    className="h-[13px] w-[12px]"
+                    src="/assets/MainContent-Assets/footer-social/huaweiİcon.webp"
+                  ></img>
+                  <div className="text-white text-[11px] font-medium">
+                    Huawei Store
+                  </div>
                 </div>
-                <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px]">
-                  <div className="text-white">Galaxy Store</div>
+                <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px] gap-2">
+                  <img
+                    className="h-[13px] w-[12px]"
+                    src="/assets/MainContent-Assets/footer-social/galaxy.webp"
+                  ></img>
+                  <div className="text-white text-[11px] font-medium">
+                    Galaxy Store
+                  </div>
                 </div>
               </div>
               <div>
@@ -191,9 +217,20 @@ function footer() {
             </div>
           </div>
         </div>
+        <div className="flex mt-[30px] md:mt-[45] md:mr-[30px] md:ml-[20px] md:ml-[105px] ml-[20px] md:h-[80px] text-center border-t-[1px] border-[#8ec5e7] md:border-white h-[96px] md:h-[80px]">
+          <p className="mt-[15px] md:mt-[20px] ml-[5px] md:ml-[80px] mr-[5px] md:mr-[140px] text-[12px] md:text-[14px] leading-[16px] md:leading-[20px] text-center font-medium md:text-white text-[#8ec5e7]">
+            Sisal Şans, Sisal Şans’a ait olan tüm metin, grafik görselleri ve
+            yazılımlarla ilişkili tüm telif haklarını elinde tutmaktadır. Sisal
+            Şans’ın izni olmaksızın, bu web sitesindeki hiçbir metin, yazılım ve
+            grafik görseli aktaramaz, tadil edemez, kullanamaz ya da başka bir
+            şekilde değiştiremezsiniz.
+          </p>
+        </div>
       </div>
+
+      <div className=" mb-[-40px] h-[80px] w-full bg-[#005c95]"></div>
     </>
   );
 }
 
-export default footer;
+export default Footer;
