@@ -74,6 +74,7 @@ function Footer() {
           <div className="flex flex-col md:flex-row items-start gap-3 justify-center">
             <div className="mx-[10px]">
               <div>
+                <hr className="w-[270px] md:hidden"></hr>
                 <span className="font-medium text-white">Sisal Şans</span>
               </div>
               <ul className="list-none text-white">
@@ -91,6 +92,7 @@ function Footer() {
             </div>
             <div className="mx-[10px]">
               <div>
+                <hr className="w-[200px] md:hidden"></hr>
                 <span className="font-medium text-white">Oyunlar</span>
               </div>
               <ul className="list-none text-white">
@@ -108,6 +110,7 @@ function Footer() {
             </div>
             <div className="mx-[10px]">
               <div>
+                <hr className="w-[200px] md:hidden"></hr>
                 <span className="font-medium text-white">
                   Çekiliş Sonuçları
                 </span>
@@ -125,6 +128,7 @@ function Footer() {
             </div>
             <div className="mx-[10px]">
               <div>
+                <hr className="w-[200px] md:hidden"></hr>
                 <span className="font-medium text-white">Kurallar</span>
               </div>
               <ul className="list-none text-white">
@@ -142,7 +146,7 @@ function Footer() {
               </ul>
             </div>
             <div className="mx-[10px]">
-              <p className="font-bold text-white text-[16px] leading-[20px] mb-[5px]">
+              <p className="font-bold text-white text-[16px] leading-[20px] mb-[5px] mt-[20px]">
                 Sosyal Medya
               </p>
               <div>

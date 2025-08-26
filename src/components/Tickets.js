@@ -44,10 +44,18 @@ function Tickets({ activeButton }) {
         const lastDrawNumber = item.last.drawDetail.drawId.number;
         const nextDrawDate = new Date(
           item.next.drawDetail.drawDate
-        ).toLocaleDateString();
+        ).toLocaleDateString("tr-TR", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric",
+        });
         const lastDrawDate = new Date(
           item.last.drawDetail.drawDate
-        ).toLocaleDateString();
+        ).toLocaleDateString("tr-TR", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric",
+        });
         const lastDrawTime = new Date(
           item.last.drawDetail.drawDate
         ).toLocaleTimeString("tr-TR", {
