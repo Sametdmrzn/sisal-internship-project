@@ -33,9 +33,17 @@ function MainContent({
             <span
               key={id}
               onClick={handleClick}
-              className={`rounded-[6px] flex items-center justify-center gap-[16px] min-w-[70px] lg:h-[40px] min-h-[34px] text-xs sm:h-[38px] lg:min-w-[120px] sm:w-[34px] cursor-pointer select-none px-3 ${border} ${bg} ${textColor} `}
+              className={`rounded-[6px] flex items-center justify-center gap-[16px] min-w-[70px] min-h-[34px] lg:h-[40px] text-xs sm:h-[38px] lg:min-w-[120px] sm:w-[34px] cursor-pointer select-none ${border} ${bg} ${textColor}`}
             >
-              {currentIcon ? <img src={currentIcon} alt="button icon" /> : text}
+              {currentIcon ? (
+                <img
+                  className="w-[70px] h-[34px] md:w-[118px] md:h-[38px]"
+                  src={currentIcon}
+                  alt="button icon"
+                />
+              ) : (
+                text
+              )}
             </span>
           );
         })}
