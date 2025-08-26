@@ -151,7 +151,7 @@ function Tickets({ activeButton }) {
               </div>
             </div>
             <div
-              className={`flex relative flex-row h-[60px] md:h-full w-full md:w-[228px] text-white ml-auto p-2 md:flex-col justify-between items-start md:items-end rounded-bl-md md:rounded-bl-none rounded-br-md md:rounded-tr-md md:rounded-br-md ${gameButton?.active.bgbanner}`}
+              className={`flex relative flex-row h-[60px] md:h-full w-full md:w-[228px] text-white ml-auto p-2 pb-[60px] md:flex-col justify-between items-start md:items-end rounded-bl-md md:rounded-bl-none rounded-br-md md:rounded-tr-md md:rounded-br-md] ${gameButton?.active.bgbanner}`}
             >
               <div className="flex flex-col">
                 <div className="text-white text-end text-[11px] md:text-[12px] md:mt-3 ">

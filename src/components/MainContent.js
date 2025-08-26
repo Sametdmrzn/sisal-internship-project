@@ -9,7 +9,7 @@ function MainContent({
 }) {
   return (
     <div id="main-content" className="lg:w-[1024px] mx-auto">
-      <div className="navigation-path flex mt-4">
+      <div className="navigation-path flex mt-4 ml-4">
         <ol className="flex gap-2">
           <li className="text-black">Milli Piyango</li>
           <li>{">"}</li>
@@ -17,7 +17,7 @@ function MainContent({
         </ol>
       </div>
 
-      <div className="flex overflow-x-auto scrollbar-hidden justify-start mt-9 gap-4 whitespace-nowrap">
+      <div className="flex overflow-x-auto scrollbar-hidden justify-start mt-9 ml-4 gap-4 whitespace-nowrap">
         {buttonData.map(({ id, text, icon, default: def, active }) => {
           const isActive = activeButton === id;
           const { border, bg, textColor } = isActive ? active : def;
