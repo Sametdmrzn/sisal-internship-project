@@ -4,6 +4,22 @@ import buttonImages from "../data/buttonImages";
 import buttonData from "../data/buttonsData";
 import { format } from "date-fns";
 import { tr } from "date-fns/locale";
+import numeral from "numeral";
+
+numeral.register("locale", "tr", {
+  delimiters: { thousands: ",", decimal: "." },
+  abbreviations: {
+    thousand: "BİN",
+    million: "MİLYON",
+    billion: "MİLYAR",
+    trillion: "TRİLYON",
+  },
+  ordinal: function (number) {
+    return number === 1 ? "er" : "e";
+  },
+  currency: { symbol: "₺" },
+});
+numeral.locale("tr");
 
 function Tickets({ activeButton }) {
   const [games, setGames] = useState([]);
@@ -60,9 +76,13 @@ function Tickets({ activeButton }) {
           "HH:mm"
         );
         const nextDrawNumber = item.next.drawDetail.drawId.number;
-        const nextJackpot = item.last.drawDetail.attributes.find(
-          (attr) => attr.name === "jackpot"
-        )?.value;
+        const nextJackpot = numeral(
+          item.last.drawDetail.attributes.find(
+            (attr) => attr.name === "jackpot"
+          )?.value
+        )
+          .format("0,0a")
+          .toUpperCase();
 
         return (
           <div
@@ -138,16 +158,9 @@ function Tickets({ activeButton }) {
                   SIRADAKİ ÇEKİLİŞ
                   <span className="font-bold ml-1 ">{nextDrawDate}</span>
                 </div>
-                <div className="relative flex justify-end">
-                  <span className="font-medium text-[22px] md:text-[30px]">
-                    505,3
-                  </span>
-                  <span className="font-medium text-[22px] md:text-[30px]">
-                    Milyon
-                  </span>
-                  <span className="font-medium text-[22px] md:text-[30px]">
-                    $
-                  </span>
+                <div className="relative flex justify-end items-center">
+                  <span className="text-[30px] font-bold">{nextJackpot}</span>
+                  <span className="text-[20px] font-bold"> ₺ </span>
                 </div>
               </div>
               <div className="flex bg-white rounded-full text-[#ea0029] text-center justify-center items-center text-[14px] w-[120px] h-[36px] md:w-[137px] md:h-[32px] cursor-pointer my-[6px] ">
