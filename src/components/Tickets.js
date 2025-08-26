@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import buttonImages from "../data/buttonImages";
 import buttonData from "../data/buttonsData";
+import { format } from "date-fns";
+import { tr } from "date-fns/locale";
 
 function Tickets({ activeButton }) {
   const [games, setGames] = useState([]);
@@ -42,26 +44,21 @@ function Tickets({ activeButton }) {
 
         const gameButton = buttonData.find((btn) => btn.code === gameCode);
         const lastDrawNumber = item.last.drawDetail.drawId.number;
-        const nextDrawDate = new Date(
-          item.next.drawDetail.drawDate
-        ).toLocaleDateString("tr-TR", {
-          day: "2-digit",
-          month: "2-digit",
-          year: "numeric",
-        });
-        const lastDrawDate = new Date(
-          item.last.drawDetail.drawDate
-        ).toLocaleDateString("tr-TR", {
-          day: "2-digit",
-          month: "2-digit",
-          year: "numeric",
-        });
-        const lastDrawTime = new Date(
-          item.last.drawDetail.drawDate
-        ).toLocaleTimeString("tr-TR", {
-          hour: "2-digit",
-          minute: "2-digit",
-        });
+        const nextDrawDate = format(
+          new Date(item.next.drawDetail.drawDate),
+          "dd.MM.yyyy",
+          { locale: tr }
+        );
+
+        const lastDrawDate = format(
+          new Date(item.last.drawDetail.drawDate),
+          "dd.MM.yyyy",
+          { locale: tr }
+        );
+        const lastDrawTime = format(
+          new Date(item.last.drawDetail.drawDate),
+          "HH:mm"
+        );
         const nextDrawNumber = item.next.drawDetail.drawId.number;
         const nextJackpot = item.last.drawDetail.attributes.find(
           (attr) => attr.name === "jackpot"
