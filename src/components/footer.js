@@ -60,17 +60,13 @@ function Footer() {
         </div>
       </div>
       <div className="flex flex-col bg-gradient-to-r from-[#005c95] to-[#0d9bf2] items-center p-4">
-        <img
-          className="absolute bottom-0 h-[588px] w-[523px] bottom-auto"
-          src="/assets/MainContent-Assets/mpicontrans.avif"
-        ></img>
-        <div className="mt-[100px] mb-[35px]">
+        <div className="mt-[100px] mb-[35px] md:ml-[30px] md:w-[950px] justify-start">
           <img
             className="w-[155px] h-[69px]"
             src="/assets/MainContent-Assets/milli-logo.svg"
           ></img>
         </div>
-        <div className="flex flex-col max-w-[980px]">
+        <div className="mp-background flex flex-col max-w-[980px]">
           <div className="flex flex-col md:flex-row items-start gap-3 justify-center">
             <div className="mx-[10px]">
               <div>

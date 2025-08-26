@@ -16,6 +16,14 @@
   font-family: "Dm Sans", sans-serif;
 }
 
+.mp-background {
+  background-image: url("/assets/MainContent-Assets/mpicontrans.avif");
+  position: absolute;
+  bottom: 0;
+  height: 588px;
+  width: 523px;
+}
+
 .App {
   text-align: center;
 }

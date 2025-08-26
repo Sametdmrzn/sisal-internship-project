@@ -89,15 +89,12 @@ function Tickets({ activeButton }) {
             key={item.game}
             className="flex flex-col items-center md:flex-row md:items-center bg-white my-2 shadow-2xl rounded-sm"
           >
-            <div className="flex items-center">
-              {/* Mobilde göster */}
+            <div className="flex items-center ml-[20px]">
               <img
                 src={buttonImages[gameCode].mobile}
                 alt={gameCode}
-                className="block md:hidden object-contain w-[120px] h-[70px] max-w-full max-h-full justify-center"
+                className="block md:hidden object-contain w-[135px] h-[44px] mt-[10px] max-w-full max-h-full justify-center"
               />
-
-              {/* Masaüstünde göster */}
               <img
                 src={buttonImages[gameCode].desktop}
                 alt={gameCode}
