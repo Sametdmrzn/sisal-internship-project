@@ -11,9 +11,9 @@ function MainContent({
     <div id="main-content" className="lg:w-[1024px] mx-auto">
       <div className="navigation-path flex mt-4 ml-4">
         <ol className="flex gap-2">
-          <li className="text-black">Milli Piyango</li>
+          <li className="text-[#a1a1a1]">Milli Piyango</li>
           <li>{">"}</li>
-          <li className="text-blue-500">Çekiliş Sonuçları</li>
+          <li className="text-[#169ad6]">Çekiliş Sonuçları</li>
         </ol>
       </div>
 

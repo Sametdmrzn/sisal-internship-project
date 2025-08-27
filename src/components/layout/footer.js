@@ -61,7 +61,7 @@ function Footer() {
       </div>
       <div className="flex flex-col bg-gradient-to-r from-[#005c95] to-[#0d9bf2] items-center p-4">
         <div className=".mp-background">
-          <div className="mt-[100px] mb-[35px] md:ml-[30px] md:w-[950px] justify-start">
+          <div className="mt-[100px] mb-[35px] ">
             <img
               className="w-[155px] h-[69px] md:ml-[120px]"
               src="/assets/footerSocial/milliLogo.svg"
