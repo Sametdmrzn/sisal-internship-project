@@ -1,5 +1,5 @@
 import React from "react";
-import buttonData from "../data/buttonsData";
+import buttonData from "../../data/buttonsData";
 
 function MainContent({
   activeButton,
@@ -22,7 +22,6 @@ function MainContent({
           const isActive = activeButton === id;
           const { border, bg, textColor } = isActive ? active : def;
           const currentIcon = isActive && active.icon ? active.icon : icon;
-
           const handleClick = () => {
             setActiveButton(id);
             setBannerColor(active.bgbanner);

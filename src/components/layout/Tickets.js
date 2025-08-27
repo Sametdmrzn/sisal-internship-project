@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import buttonImages from "../data/buttonImages";
-import buttonData from "../data/buttonsData";
+import buttonImages from "../../data/buttonImages";
+import buttonData from "../../data/buttonsData";
 import { format } from "date-fns";
 import { tr } from "date-fns/locale";
 import numeral from "numeral";

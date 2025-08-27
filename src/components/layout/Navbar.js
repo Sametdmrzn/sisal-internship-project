@@ -4,12 +4,10 @@ function Navbar() {
   return (
     <>
       <nav className="relative flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white h-[60px]">
-        {/* Desktop Menu */}
         <ul className="hidden md:flex gap-[20px] items-center cursor-pointer">
           <li className="relative group items-center">
             <span className="flex h-[60px] items-center ">Sayısal Oyunlar</span>
-            {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px] text-white  rounded shadow-lg z-50">
+            <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px] text-white rounded shadow-lg z-50">
               <li>
                 <div className="block px-4 py-2 hover:bg-[#23AAE2]">
                   Sayısal Loto
@@ -46,7 +44,6 @@ function Navbar() {
           </li>
           <li className="relative group">
             <div className=" flex items-center h-[60px]">Sonuçlar</div>
-            {/* Dropdown menu */}
             <ul className="absolute hidden group-hover:block left-0 top-[60px] bg-[#169AD6] w-[177px] text-white rounded shadow-lg z-50">
               <li>
                 <div className="block px-4 py-2 hover:bg-[#23AAE2]">
@@ -66,28 +63,25 @@ function Navbar() {
           <li>
             <img
               className="w-6 h-6"
-              src="/assets/MainContent-Assets/campaigns.svg"
+              src="/assets/navbarAssets/campaigns.svg"
             ></img>
           </li>
           <li>Kampanyalar</li>
           <li>
             <img
               className="w-6 h-6"
-              src="/assets/MainContent-Assets/calendar.svg"
+              src="/assets/navbarAssets/calendar.svg"
             ></img>
+          </li>
+          <li className="border-r"></li>
+          <li>
+            <img className="w-6 h-6" src="/assets/navbarAssets/Tv.svg"></img>
           </li>
           <li className="border-r"></li>
           <li>
             <img
               className="w-6 h-6"
-              src="/assets/MainContent-Assets/Tv.svg"
-            ></img>
-          </li>
-          <li className="border-r"></li>
-          <li>
-            <img
-              className="w-6 h-6"
-              src="/assets/MainContent-Assets/blogİcon.svg"
+              src="/assets/navbarAssets/blogİcon.svg"
             ></img>
           </li>
         </ul>

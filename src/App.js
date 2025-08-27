@@ -1,11 +1,11 @@
 import react, { useEffect, useState } from "react";
 import axios from "axios";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import MainContent from "./components/MainContent";
-import ProdCard from "./components/ProdCard";
-import Tickets from "./components/Tickets";
-import Footer from "./components/footer";
+import Header from "./components/layout/Header";
+import Navbar from "./components/layout/Navbar";
+import MainContent from "./components/layout/MainContent";
+import ProdCard from "./components/layout/ProdCard";
+import Tickets from "./components/layout/Tickets";
+import Footer from "./components/layout/footer";
 
 function App() {
   const [activeButton, setActiveButton] = useState(1);

@@ -1,5 +1,5 @@
 import React from "react";
-import buttonData from "../data/buttonsData";
+import buttonData from "../../data/buttonsData";
 
 function ProdCard({ bannerColor, logoSrc }) {
   return (

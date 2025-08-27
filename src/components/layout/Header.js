@@ -35,7 +35,7 @@ function Header() {
             </svg>
           </button>
           <img
-            src="/assets/MainContent-Assets/mainLogo.svg"
+            src="/assets/headerAssets/mainLogo.svg"
             className="w-auto max-w-[100px] h-auto ml-3"
             alt="Main Logo"
           />
@@ -50,7 +50,7 @@ function Header() {
             Üye Ol
           </button>
           <img
-            src="/assets/MainContent-Assets/balance.svg"
+            src="/assets/headerAssets/balance.svg"
             className="bg-[#40CD8C] p-2 rounded ml-8 hidden md:flex"
             alt="Balance"
           />
@@ -71,7 +71,7 @@ function Header() {
                 <div className="flex">
                   <div className="flex justify-center items-center gap-2">
                     <img
-                      src="/assets/MainContent-Assets/mainLogo.svg"
+                      src="/assets/headerAssets/mainLogo.svg"
                       className="w-auto max-w-[100px] h-auto ml-3"
                       alt="Main Logo"
                     />
@@ -84,7 +84,7 @@ function Header() {
                       Üye Ol
                     </button>
                     <img
-                      src="/assets/MainContent-Assets/balance.svg"
+                      src="/assets/headerAssets/balance.svg"
                       className="bg-[#40CD8C] p-2 rounded ml-8 hidden md:flex"
                       alt="Balance"
                     />

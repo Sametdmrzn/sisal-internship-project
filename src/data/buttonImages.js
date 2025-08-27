@@ -1,19 +1,19 @@
 const buttonImages = {
   SAYISALLOTO: {
     mobile: "/assets/ticketİmg/sayisalLotoMobile.svg",
-    desktop: "/assets/MainContent-Assets/sayısallotoTicket.svg",
+    desktop: "/assets/ticketİmg/sayisallotoTicket.svg",
   },
   SUPERLOTO: {
     mobile: "/assets/ticketİmg/superLotoMobile.svg",
-    desktop: "/assets/MainContent-Assets/superlototicket.svg",
+    desktop: "/assets/ticketİmg/superLototicket.svg",
   },
   ONNUMARA: {
     mobile: "/assets/ticketİmg/onNumara.svg",
-    desktop: "/assets/MainContent-Assets/onnumaraticket.svg",
+    desktop: "/assets/ticketİmg/onNumaraticket.svg",
   },
   SANSTOPU: {
     mobile: "/assets/ticketİmg/sansTopu.svg",
-    desktop: "/assets/MainContent-Assets/sanstopu.svg",
+    desktop: "/assets/ticketİmg/sansTopuMobile.svg",
   },
 };
 

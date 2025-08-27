@@ -13,7 +13,7 @@ function Footer() {
               <div className="flex md:flex-col items-start">
                 <img
                   className="mr-[10px] h-[24px] w-[24px]"
-                  src="/assets/MainContent-Assets/phone.svg"
+                  src="/assets/footerSocial/phone.svg"
                 ></img>
                 <div>
                   <div className="text-white font-medium">Destek</div>
@@ -26,7 +26,7 @@ function Footer() {
                 <div className="flex md:flex-col items-start">
                   <img
                     className="mr-[10px] h-[24px] w-[24px]"
-                    src="/assets/MainContent-Assets/mail.svg"
+                    src="/assets/footerSocial/mail.svg"
                   ></img>
                   <div className="flex-col ">
                     <div className="text-white font-medium">E-posta</div>
@@ -42,7 +42,7 @@ function Footer() {
                 <div className="flex md:flex-col items-start">
                   <img
                     className="mr-[10px] h-[24px] w-[24px]"
-                    src="/assets/MainContent-Assets/faq.svg"
+                    src="/assets/footerSocial/faq.svg"
                   ></img>
                   <div className="flex-col">
                     <div className="text-white font-medium">
@@ -50,7 +50,7 @@ function Footer() {
                     </div>
                     <div className="flex text-white text-[14px]">
                       İnceleyin
-                      <img src="/assets/MainContent-Assets/Arrow-Small-Right-White.svg"></img>
+                      <img src="/assets/footerSocial/rightArrow.svg"></img>
                     </div>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ function Footer() {
           <div className="mt-[100px] mb-[35px] md:ml-[30px] md:w-[950px] justify-start">
             <img
               className="w-[155px] h-[69px] md:ml-[120px]"
-              src="/assets/MainContent-Assets/milli-logo.svg"
+              src="/assets/footerSocial/milliLogo.svg"
             ></img>
           </div>
           <div className="flex flex-col">
@@ -150,20 +150,23 @@ function Footer() {
                   <ul className="flex list-none text-white items-start gap-2">
                     <li className="flex rounded-full bg-white items-center justify-center w-[27px] h-[27px]">
                       <img
-                        src="/assets/MainContent-Assets/footer-social/facebook.svg"
+                        src="/assets/footerSocial/facebook.svg"
                         className="w-[17px] h-[17px] text-[27px]"
+                        alt="facebook"
                       ></img>
                     </li>
                     <li className="flex rounded-full bg-white items-center justify-center w-[27px] h-[27px]">
                       <img
-                        src="/assets/MainContent-Assets/footer-social/ınstagram.svg"
+                        src="/assets/footerSocial/instagram.svg"
                         className="w-[17px] h-[17px] text-[27px]"
+                        alt="instagram"
                       ></img>
                     </li>
                     <li className="flex rounded-full bg-white items-center justify-center w-[27px] h-[27px]">
                       <img
-                        src="/assets/MainContent-Assets/footer-social/xİcon.avif"
+                        src="/assets/footerSocial/xİcon.avif"
                         className="w-[17px] h-[17px] text-[27px]"
+                        alt="x"
                       ></img>
                     </li>
                   </ul>
@@ -175,7 +178,8 @@ function Footer() {
                   <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px] gap-2">
                     <img
                       className="h-[13px] w-[12px]"
-                      src="/assets/MainContent-Assets/footer-social/ios.webp"
+                      src="/assets/footerSocial/ios.webp"
+                      alt="ios"
                     ></img>
                     <div className="text-white text-[11px] font-medium">
                       App Store
@@ -184,7 +188,8 @@ function Footer() {
                   <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px] gap-2">
                     <img
                       className="h-[13px] w-[12px]"
-                      src="/assets/MainContent-Assets/footer-social/android.png"
+                      src="/assets/footerSocial/android.png"
+                      alt="google play"
                     ></img>
                     <div className="text-white text-[11px] font-medium">
                       Google Play
@@ -193,7 +198,8 @@ function Footer() {
                   <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px] gap-2">
                     <img
                       className="h-[13px] w-[12px]"
-                      src="/assets/MainContent-Assets/footer-social/huaweiİcon.webp"
+                      src="/assets/footerSocial/huaweiIcon.webp"
+                      alt="huawei"
                     ></img>
                     <div className="text-white text-[11px] font-medium">
                       Huawei Store
@@ -202,7 +208,8 @@ function Footer() {
                   <div className="flex items-center justify-center h-[32px] w-[100px] leading-[10px] bg-black rounded-[8px] gap-2">
                     <img
                       className="h-[13px] w-[12px]"
-                      src="/assets/MainContent-Assets/footer-social/galaxy.webp"
+                      src="/assets/footerSocial/galaxy.webp"
+                      alt="galaxy store"
                     ></img>
                     <div className="text-white text-[11px] font-medium">
                       Galaxy Store
@@ -212,7 +219,8 @@ function Footer() {
                 <div>
                   <img
                     className="w-[23px] h-[26px] mt-[20px]"
-                    src="/assets/MainContent-Assets/footer-social/mpQr.jpeg"
+                    src="/assets/footerSocial/mpQr.jpeg"
+                    alt="qr code"
                   ></img>
                 </div>
               </div>

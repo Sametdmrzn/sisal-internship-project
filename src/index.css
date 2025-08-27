@@ -29,9 +29,3 @@ body {
 * {
   font-family: "Dm Sans", sans-serif;
 }
-
-.mp-background {
-  background-image: url("../public/assets/MainContent-Assets/mpicontrans.avif");
-  background-repeat: no-repeat;
-  background-position: center;
-}
