@@ -10,7 +10,11 @@ function ProdCard({ bannerColor, logoSrc }) {
       <div className="flex items-center justify-between flex-nowrap gap-4 w-full">
         {/* Logo */}
         <div className="min-w-[80px] w-20 md:w-28">
-          <img src={logoSrc} alt="active game logo" />
+          <img
+            className="w-[82px] w-[20px]"
+            src={logoSrc}
+            alt="active game logo"
+          />
         </div>
 
         {/* Menu */}
