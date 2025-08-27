@@ -91,7 +91,7 @@ function Header() {
                   </div>
                 </div>
               </li>
-              <li className="p-[12px] bg-black/8 border-b-[1px] border-black/10">
+              <li className="p-[12px] bg-black/8 border-b-[1px] mt-4 border-black/10">
                 <button
                   onClick={() => toggleSubMenu("oyunlar")}
                   className="font-bold w-full text-left"
