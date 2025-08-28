@@ -2,11 +2,10 @@ import React, { useState } from "react";
 
 function Header() {
   const [HamburgerMenu, setHamburgerMenu] = useState(false);
-  const [openMenu, setOpenMenu] = useState(null); // hangi menü açık?
-
+  const [openMenu, setOpenMenu] = useState(null);
   const toggleMenu = () => {
     setHamburgerMenu(!HamburgerMenu);
-    setOpenMenu(null); // menü kapanınca alt menüleri de kapat
+    setOpenMenu(null);
   };
 
   const toggleSubMenu = (menuName) => {

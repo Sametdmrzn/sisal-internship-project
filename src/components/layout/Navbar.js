@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <nav className="relative flex hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white h-[60px]">
+      <nav className="flex relative hidden lg:flex justify-between items-center px-[100px] p-4 bg-[#0173B9] text-white h-[60px]">
         <ul className="hidden md:flex gap-[20px] items-center cursor-pointer">
           <li className="relative group items-center">
             <span className="flex h-[60px] items-center ">Sayısal Oyunlar</span>
@@ -86,19 +86,6 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-
-      {/* Mobile Menu */}
-      <div
-        id="mobileMenu"
-        className="fixed top-0 left-0 w-full h-full bg-white z-40 hidden flex flex-col items-center justify-center gap-4"
-      >
-        <div>Menü</div>
-        <div>Hakkımızda</div>
-        <div>İletişim</div>
-        <button id="closeBtn" className="text-red-500">
-          Kapat
-        </button>
-      </div>
     </>
   );
 }
