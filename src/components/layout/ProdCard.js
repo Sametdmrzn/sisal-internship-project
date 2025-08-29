@@ -5,7 +5,7 @@ function ProdCard({ bannerColor, logoSrc }) {
   return (
     <div
       id="topside"
-      className={`${bannerColor} flex  lg:w-[1024px] lg:h-[88px] sm:w-full sm:h-[40px] text-white px-4 py-3 mt-3 mx-auto rounded-t`}
+      className={`${bannerColor} flex lg:w-[1024px] lg:h-[88px] sm:w-full sm:h-[40px] text-white px-4 py-3 mt-3 mx-auto rounded-t`}
     >
       <div className="flex items-center justify-between flex-nowrap gap-4 w-full">
         {/* Logo */}
@@ -19,7 +19,7 @@ function ProdCard({ bannerColor, logoSrc }) {
 
         {/* Menu */}
         <ul className="flex flex-wrap justify-center md:justify-end flex-nowrap">
-          <li className="flex  min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
+          <li className="flex min-w-[80px] text-white rounded-full hover:bg-black/20 px-3 py-1 text-center cursor-pointer">
             <div className="text-[12px] md:text-[14px] font-bold whitespace-nowrap">
               Hemen Oyna
             </div>

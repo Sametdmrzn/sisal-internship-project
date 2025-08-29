@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import axios from "axios";
 import Header from "./components/layout/Header";
 import Navbar from "./components/layout/Navbar";
 import MainContent from "./components/layout/MainContent";
 import ProdCard from "./components/layout/ProdCard";
 import Tickets from "./components/layout/Tickets";
 import Footer from "./components/layout/footer";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   const [activeButton, setActiveButton] = useState(1);

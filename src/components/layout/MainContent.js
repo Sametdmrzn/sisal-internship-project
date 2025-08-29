@@ -8,16 +8,16 @@ function MainContent({
   setLogoSrc,
 }) {
   return (
-    <div id="main-content" className="lg:w-[1024px] mx-auto">
-      <div className="navigation-path flex mt-4 ml-4">
-        <ol className="flex gap-2">
+    <div className="lg:w-[1024px] mx-auto">
+      <div className="flex mt-4 ml-4">
+        <ul className="flex gap-2">
           <li className="text-[#a1a1a1]">Milli Piyango</li>
           <li>{">"}</li>
           <li className="text-[#169ad6]">Çekiliş Sonuçları</li>
-        </ol>
+        </ul>
       </div>
 
-      <div className="flex overflow-x-auto scrollbar-hidden justify-start mt-9 ml-4 gap-4 whitespace-nowrap">
+      <div className="flex overflow-x-auto justify-start mt-9 ml-4 gap-4 whitespace-nowrap scrollbar-hidden">
         {buttonData.map(({ id, text, icon, default: def, active }) => {
           const isActive = activeButton === id;
           const { border, bg, textColor } = isActive ? active : def;
@@ -25,7 +25,7 @@ function MainContent({
           const handleClick = () => {
             setActiveButton(id);
             setBannerColor(active.bgbanner);
-            setLogoSrc(active.icon || icon || "/assets/default-logo.svg");
+            setLogoSrc(active.icon);
           };
 
           return (

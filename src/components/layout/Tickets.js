@@ -7,15 +7,11 @@ import { tr } from "date-fns/locale";
 import numeral from "numeral";
 
 numeral.register("locale", "tr", {
-  delimiters: { thousands: ",", decimal: "." },
+  delimiters: { thousands: "." },
   abbreviations: {
     thousand: "BİN",
-    million: "MİLYON",
+    million: "Milyon",
     billion: "MİLYAR",
-    trillion: "TRİLYON",
-  },
-  ordinal: function (number) {
-    return number === 1 ? "er" : "e";
   },
   currency: { symbol: "₺" },
 });
@@ -75,14 +71,30 @@ function Tickets({ activeButton }) {
           new Date(item.last.drawDetail.drawDate),
           "HH:mm"
         );
-        const nextDrawNumber = item.next.drawDetail.drawId.number;
-        const nextJackpot = numeral(
-          item.last.drawDetail.attributes.find(
-            (attr) => attr.name === "jackpot"
-          )?.value
-        )
-          .format("0,0a")
+        const jackpotRaw = Number(
+          item.last.drawDetail.prizes?.[0]?.payout || 0
+        );
+        const jackpot = jackpotRaw / 100;
+
+        let formatPattern;
+
+        if (jackpot >= 100_000_000) {
+          formatPattern = "0a";
+        } else if (jackpot >= 10_000_000) {
+          formatPattern = "0,0a";
+        } else if (jackpot >= 1_000_000) {
+          formatPattern = "0,00a";
+        } else if (jackpot >= 100_000) {
+          formatPattern = "0,0.00";
+        } else {
+          formatPattern = "0,0.00";
+        }
+
+        const formattedJackpot = numeral(jackpot)
+          .format(formatPattern)
           .toUpperCase();
+
+        console.log(formattedJackpot);
 
         return (
           <div
@@ -165,7 +177,9 @@ function Tickets({ activeButton }) {
                   <span className="font-bold ml-1 ">{nextDrawDate}</span>
                 </div>
                 <div className="relative flex justify-end items-center">
-                  <span className="text-[30px] font-bold">{nextJackpot}</span>
+                  <span className="text-[30px] font-bold">
+                    {formattedJackpot}
+                  </span>
                   <span className="text-[20px] font-bold"> ₺ </span>
                 </div>
               </div>
