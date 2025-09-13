@@ -1,18 +1,16 @@
-import react, { useEffect, useState  } from 'react';
-import axios from 'axios';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import MainContent from './components/MainContent';
-import ProdCard from './components/ProdCard';
-import ResultChecker from './components/ResultChecker';
-import Tickets from './components/Tickets';
+import React, { useState } from "react";
+import Header from "./components/layout/Header";
+import Navbar from "./components/layout/Navbar";
+import MainContent from "./components/layout/MainContent";
+import ProdCard from "./components/layout/ProdCard";
+import Tickets from "./components/layout/Tickets";
+import Footer from "./components/layout/footer";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   const [activeButton, setActiveButton] = useState(1);
-  const [bannerColor, setBannerColor] = useState('bg-[#005C95]');
-  const [logoSrc, setLogoSrc] = useState('/assets/default-logo.svg');
- 
-
+  const [bannerColor, setBannerColor] = useState("bg-[#005C95]");
+  const [logoSrc, setLogoSrc] = useState("/assets/default-logo.svg");
 
   return (
     <div className="App">
@@ -23,17 +21,13 @@ function App() {
         activeButton={activeButton}
         setActiveButton={setActiveButton}
         setBannerColor={setBannerColor}
-        setLogoSrc={setLogoSrc}        // tanımlı state setter gönderiliyor
+        setLogoSrc={setLogoSrc}
       />
-
-      <ProdCard
-        bannerColor={bannerColor}
-        logoSrc={logoSrc}               //  ProdCard'ın beklediği prop gönderiliyor
-      />
-
-      <Tickets/>
-
-      
+      {activeButton !== 1 && (
+        <ProdCard bannerColor={bannerColor} logoSrc={logoSrc} />
+      )}
+      <Tickets activeButton={activeButton} />
+      <Footer />
     </div>
   );
 }
