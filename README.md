@@ -16,7 +16,7 @@ The goal is to redesign the existing page while preserving its user experience a
 [Figma-](https://github.com/Sametdmrzn/Figma-)
 
 
-## Kurulum
+## Installation Guide
 
 To start the project:
 -npm install
@@ -29,4 +29,3 @@ git clone https://github.com/Sametdmrzn/Figma-.git
 cd Figma-
 
 
-# ABLETON
